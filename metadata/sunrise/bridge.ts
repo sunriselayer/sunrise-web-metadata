@@ -1,6 +1,6 @@
 import { BridgeMetadata } from '../../types/bridge';
 
-export const metadataBridge: BridgeMetadata = {
+export const sunriseBridgeMetadata: BridgeMetadata = {
 	ibc: {
 		name: 'IBC',
 		image: ''

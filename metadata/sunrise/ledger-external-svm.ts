@@ -1,7 +1,7 @@
 import { LedgerMetadata } from '../../types/ledger';
 import { AddressType } from '../../types/wallet';
 
-export const metadataExternalSvm: LedgerMetadata = {
+export const sunriseExternalSvmMetadata: LedgerMetadata = {
 	solana: {
 		name: 'Solana',
 		image:

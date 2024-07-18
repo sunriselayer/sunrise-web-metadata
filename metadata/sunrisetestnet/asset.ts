@@ -3,7 +3,7 @@ import { AssetMetadata } from '../../types/asset';
 export const ASSET_ID_RISE = 'urise';
 export const ASSET_ID_VRISE = 'uvrise';
 
-export const metadataAssetSunrise: AssetMetadata = {
+export const sunriseTestAssetMetadata: AssetMetadata = {
 	[ASSET_ID_RISE]: {
 		tickerDisplay: 'RISE',
 		tickerSystem: 'RISE',

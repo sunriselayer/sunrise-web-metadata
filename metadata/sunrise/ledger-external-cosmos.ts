@@ -1,8 +1,7 @@
 import { LedgerMetadata } from '../../types/ledger';
 import { AddressType } from '../../types/wallet';
-import { ASSET_ID_RISE } from './asset';
 
-export const metadataExternalCosmos: LedgerMetadata = {
+export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 	cosmoshub: {
 		name: 'Cosmos Hub',
 		image:

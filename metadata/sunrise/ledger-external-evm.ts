@@ -1,7 +1,7 @@
 import { LedgerMetadata } from '../../types/ledger';
 import { AddressType } from '../../types/wallet';
 
-export const metadataExternalEvm: LedgerMetadata = {
+export const sunriseExternalEvmMetadata: LedgerMetadata = {
 	ethereum: {
 		name: 'Ethereum',
 		image:

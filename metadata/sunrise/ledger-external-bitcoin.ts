@@ -1,7 +1,7 @@
 import { LedgerMetadata } from '../../types/ledger';
 import { AddressType } from '../../types/wallet';
 
-export const metadataExternalBitcoin: LedgerMetadata = {
+export const sunriseExternalBitcoinMetadata: LedgerMetadata = {
 	bitcoin: {
 		name: 'Bitcoin',
 		image:
