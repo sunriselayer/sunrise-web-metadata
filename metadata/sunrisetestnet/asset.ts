@@ -1,4 +1,4 @@
-import { AssetMetadata } from '../../types/asset';
+import type { AssetMetadata } from '../../types/asset';
 
 export const ASSET_ID_RISE = 'urise';
 export const ASSET_ID_VRISE = 'uvrise';

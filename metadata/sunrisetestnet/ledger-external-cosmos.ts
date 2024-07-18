@@ -1,4 +1,4 @@
-import { LedgerMetadata } from '../../types/ledger';
+import type { LedgerMetadata } from '../../types/ledger';
 import { AddressType } from '../../types/wallet';
 import { ASSET_ID_RISE } from './asset';
 
