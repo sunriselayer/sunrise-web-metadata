@@ -1,0 +1,212 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "chain_name": {
+            "type": "string"
+        },
+        "chain_id": {
+            "type": "string"
+        },
+        "assets": {
+            "type": "object",
+            "additionalProperties": {
+                "type": "object",
+                "properties": {
+                    "tickerDisplay": {
+                        "type": "string"
+                    },
+                    "tickerSystem": {
+                        "type": "string"
+                    },
+                    "image": {
+                        "type": "string"
+                    },
+                    "exponents": {
+                        "type": "integer"
+                    },
+                    "bridge": {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "string"
+                            },
+                            "originLedgerId": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "id",
+                            "originLedgerId"
+                        ]
+                    },
+                    "swap": {
+                        "type": "object",
+                        "additionalProperties": {
+                            "type": "object",
+                            "properties": {
+                                "interfaceProviderAddr": {
+                                    "type": "string"
+                                },
+                                "pool": {
+                                    "type": "object",
+                                    "properties": {
+                                        "poolId": {
+                                            "type": "integer"
+                                        }
+                                    },
+                                    "required": [
+                                        "poolId"
+                                    ]
+                                },
+                                "series": {
+                                    "type": "object",
+                                    "properties": {
+                                        "routes": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/$defs/Route"
+                                            }
+                                        }
+                                    },
+                                    "required": [
+                                        "routes"
+                                    ]
+                                },
+                                "parallel": {
+                                    "type": "object",
+                                    "properties": {
+                                        "routes": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/$defs/Route"
+                                            }
+                                        },
+                                        "weights": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "required": [
+                                        "routes",
+                                        "weights"
+                                    ]
+                                }
+                            },
+                            "oneOf": [
+                                {
+                                    "required": [
+                                        "pool"
+                                    ]
+                                },
+                                {
+                                    "required": [
+                                        "series"
+                                    ]
+                                },
+                                {
+                                    "required": [
+                                        "parallel"
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "tickerDisplay",
+                    "tickerSystem",
+                    "image",
+                    "exponents"
+                ]
+            }
+        }
+    },
+    "required": [
+        "chain_name",
+        "chain_id",
+        "assets"
+    ],
+    "$defs": {
+        "Route": {
+            "type": "object",
+            "properties": {
+                "denomIn": {
+                    "type": "string"
+                },
+                "denomOut": {
+                    "type": "string"
+                },
+                "pool": {
+                    "type": "object",
+                    "properties": {
+                        "poolId": {
+                            "type": "integer"
+                        }
+                    },
+                    "required": [
+                        "poolId"
+                    ]
+                },
+                "series": {
+                    "type": "object",
+                    "properties": {
+                        "routes": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/$defs/Route"
+                            }
+                        }
+                    },
+                    "required": [
+                        "routes"
+                    ]
+                },
+                "parallel": {
+                    "type": "object",
+                    "properties": {
+                        "routes": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/$defs/Route"
+                            }
+                        },
+                        "weights": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "required": [
+                        "routes",
+                        "weights"
+                    ]
+                }
+            },
+            "required": [
+                "denomIn",
+                "denomOut"
+            ],
+            "oneOf": [
+                {
+                    "required": [
+                        "pool"
+                    ]
+                },
+                {
+                    "required": [
+                        "series"
+                    ]
+                },
+                {
+                    "required": [
+                        "parallel"
+                    ]
+                }
+            ]
+        }
+    }
+}
