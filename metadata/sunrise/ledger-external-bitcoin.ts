@@ -1,4 +1,4 @@
-import { LedgerMetadata } from '../../types/ledger';
+import type { LedgerMetadata } from '../../types/ledger';
 import { AddressType } from '../../types/wallet';
 
 export const sunriseExternalBitcoinMetadata: LedgerMetadata = {
