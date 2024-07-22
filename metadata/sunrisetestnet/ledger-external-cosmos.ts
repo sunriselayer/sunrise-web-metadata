@@ -88,7 +88,7 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 		addressType: AddressType.Cosmos,
 		prefix: 'osmo',
 		chainId: 'osmo-test-5',
-		srcChannel: 'channel-8575',
+		srcChannel: 'channel-8616',
 		dstChannel: 'channel-0'
 	}
 };
