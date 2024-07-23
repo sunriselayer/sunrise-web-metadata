@@ -12,11 +12,22 @@ export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 				// todo change to ibc denom
 				tickerDisplay: 'ETH',
 				tickerSystem: 'ETH',
-				baseDenom: 'eth',
+				base: 'eth',
 				baseExponents: 18,
 				image:
 					'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg',
-				exponents: 18
+				exponents: 6
+			},
+			ausdc: {
+				// todo change to ibc denom
+				tickerDisplay: 'axlUSDC',
+				tickerSystem: 'aUSDC',
+				base: '0x254d06f33bDc5b8ee05b2ea472107E300226659A',
+				symbol: 'aUSDC',
+				baseExponents: 18,
+				image:
+					'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+				exponents: 6
 			}
 		},
 		addressType: AddressType.Evm,
@@ -24,7 +35,7 @@ export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 			txPage: 'https://sepolia.etherscan.io/tx/${txHash}'
 		},
 		axelarGmp: {
-			evmContractAddress: '0xa5609cb1af27a7C29466A83FC46D84F32e197D4e',
+			evmContractAddress: '0xaD9F9FF4890077d63F05D11180796270fEA866A7',
 			evmFunctionName: 'sunriseSwap',
 			ibcChainName: 'neutron',
 			ibcChannelId: 'channel-1097',
@@ -222,11 +233,11 @@ export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 				// todo change to ibc denom
 				tickerDisplay: 'ETH',
 				tickerSystem: 'ETH',
-				baseDenom: 'eth',
+				base: 'eth',
 				baseExponents: 18,
 				image:
 					'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg',
-				exponents: 18
+				exponents: 6
 			}
 		},
 		addressType: AddressType.Evm
@@ -241,7 +252,7 @@ export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 				tickerDisplay: 'OAS',
 				tickerSystem: 'OAS',
 				image: 'https://s2.coinmarketcap.com/static/img/coins/64x64/22265.png',
-				exponents: 18
+				exponents: 6
 			}
 		},
 		addressType: AddressType.Evm

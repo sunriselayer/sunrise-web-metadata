@@ -13,7 +13,7 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 				// todo change to ibc denom
 				tickerDisplay: 'ATOM',
 				tickerSystem: 'ATOM',
-				baseDenom: 'uatom',
+				base: 'uatom',
 				image:
 					'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
 				exponents: 6
@@ -33,7 +33,7 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 				// todo change to ibc denom
 				tickerDisplay: 'TIA',
 				tickerSystem: 'TIA',
-				baseDenom: 'utia',
+				base: 'utia',
 				image:
 					'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg',
 				exponents: 6
@@ -53,7 +53,7 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 				// todo change to ibc denom
 				tickerDisplay: 'TIA',
 				tickerSystem: 'TIA',
-				baseDenom: 'utia',
+				base: 'utia',
 				image:
 					'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg',
 				exponents: 6
@@ -71,7 +71,7 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 			'ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518': {
 				tickerDisplay: 'OSMO',
 				tickerSystem: 'OSMO',
-				baseDenom: 'uosmo',
+				base: 'uosmo',
 				image:
 					'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg',
 				exponents: 6
@@ -79,7 +79,7 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 			[ASSET_ID_RISE]: {
 				tickerDisplay: 'RISE',
 				tickerSystem: 'RISE',
-				baseDenom: 'ibc/447BA50F36A959C65D475737B219095045AEFD50DF250DBCBCD659EAC15C904D',
+				base: 'ibc/447BA50F36A959C65D475737B219095045AEFD50DF250DBCBCD659EAC15C904D',
 				image:
 					'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/sunrise.svg',
 				exponents: 6

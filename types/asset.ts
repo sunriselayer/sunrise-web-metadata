@@ -26,7 +26,8 @@ export type AssetMetadata = {
 		tickerSystem: string;
 		image: string;
 		exponents: number;
-		baseDenom?: string; // denom in external chain
+		base?: string; // denom in external chain (cosmos) or contract address (EVM)
+		symbol?: string;
 		baseExponents?: number; // exponent in external chain (Required only if different)
 		bridge?: {
 			id: string;
