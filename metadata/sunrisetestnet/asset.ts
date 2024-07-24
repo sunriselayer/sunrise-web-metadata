@@ -11,17 +11,17 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/sunrise.svg',
 		exponents: 6,
 		swap: {
-			'ibc/uatom': {
+			uatom: {
+				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
+				pool: { poolId: 0 }
+			},
+			uusdc: {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
 				pool: { poolId: 1 }
 			},
-			'ibc/uusdc': {
+			uusdt: {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
 				pool: { poolId: 2 }
-			},
-			'ibc/uusdt': {
-				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 3 }
 			}
 		}
 	},
@@ -32,7 +32,7 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/vrise.svg',
 		exponents: 6
 	},
-	'ibc/uatom': {
+	uatom: {
 		tickerDisplay: 'ATOM',
 		tickerSystem: 'ATOM',
 		image:
@@ -40,20 +40,20 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		exponents: 6,
 		bridge: {
 			id: 'ibc',
-			originLedgerId: 'cosmos_hub'
+			originLedgerId: 'cosmoshub'
 		},
 		swap: {
 			[ASSET_ID_RISE]: {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 1 }
+				pool: { poolId: 0 }
 			},
-			'ibc/stuatom': {
+			stuatom: {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 7 }
+				pool: { poolId: 6 }
 			}
 		}
 	},
-	'ibc/stuatom': {
+	stuatom: {
 		tickerDisplay: 'stATOM',
 		tickerSystem: 'stATOM',
 		image:
@@ -64,13 +64,33 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 			originLedgerId: 'stride'
 		},
 		swap: {
-			'ibc/uatom': {
+			uatom: {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
+				pool: { poolId: 6 }
+			}
+		}
+	},
+	'ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518': {
+		tickerDisplay: 'OSMO',
+		tickerSystem: 'OSMO',
+		image: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg',
+		exponents: 6,
+		bridge: {
+			id: 'ibc',
+			originLedgerId: 'osmosis'
+		},
+		swap: {
+			[ASSET_ID_RISE]: {
+				interfaceProviderAddr: 'sunrise1v0h8j7x7kfys29kj4uwdudcc9y0nx6tw2f955q',
+				pool: { poolId: 8 }
+			},
+			uatom: {
+				interfaceProviderAddr: 'sunrise1v0h8j7x7kfys29kj4uwdudcc9y0nx6tw2f955q',
 				pool: { poolId: 7 }
 			}
 		}
 	},
-	'ibc/uusdc': {
+	uusdc: {
 		tickerDisplay: 'USDC',
 		tickerSystem: 'USDC',
 		image:
@@ -83,23 +103,23 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		swap: {
 			[ASSET_ID_RISE]: {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 2 }
+				pool: { poolId: 1 }
 			},
-			'ibc/uusdt': {
+			uusdt: {
+				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
+				pool: { poolId: 3 }
+			},
+			ushib: {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
 				pool: { poolId: 4 }
 			},
-			'ibc/ushib': {
+			uibgt: {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
 				pool: { poolId: 5 }
-			},
-			'ibc/uibgt': {
-				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 6 }
 			}
 		}
 	},
-	'ibc/uusdt': {
+	uusdt: {
 		tickerDisplay: 'USDT',
 		tickerSystem: 'USDT',
 		image:
@@ -112,27 +132,27 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		swap: {
 			[ASSET_ID_RISE]: {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 3 }
+				pool: { poolId: 2 }
 			},
-			'ibc/uusdc': {
+			uusdc: {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 4 }
+				pool: { poolId: 3 }
 			}
 		}
 	},
-	'ibc/uibgt': {
+	uibgt: {
 		tickerDisplay: 'iBGT',
 		tickerSystem: 'iBGT',
 		image: 'https://miro.medium.com/v2/resize:fill:176:176/1*yGFxA-Kv4_N5Z9TLfLNIRg.png',
 		exponents: 6,
 		swap: {
-			'ibc/uusdc': {
+			uusdc: {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 6 }
+				pool: { poolId: 5 }
 			}
 		}
 	},
-	'ibc/uweth': {
+	uweth: {
 		tickerDisplay: 'wETH.axl',
 		tickerSystem: 'ETH',
 		image:
@@ -143,13 +163,13 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 			originLedgerId: 'ethereum'
 		}
 	},
-	'ibc/uoas': {
+	uoas: {
 		tickerDisplay: 'OAS.lcp',
 		tickerSystem: 'OAS',
 		image: 'https://s2.coinmarketcap.com/static/img/coins/64x64/22265.png',
 		exponents: 6
 	},
-	'ibc/ushib': {
+	ushib: {
 		tickerDisplay: 'SHIB.axl',
 		tickerSystem: 'SHIB',
 		image:
@@ -160,13 +180,13 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 			originLedgerId: 'ethereum'
 		},
 		swap: {
-			'ibc/uusdc': {
+			uusdc: {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 5 }
+				pool: { poolId: 4 }
 			}
 		}
 	},
-	'ibc/upepe': {
+	upepe: {
 		tickerDisplay: 'PEPE.axl',
 		tickerSystem: 'PEPE',
 		image:
