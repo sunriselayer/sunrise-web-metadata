@@ -35,7 +35,7 @@ export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 			txPage: 'https://sepolia.etherscan.io/tx/${txHash}'
 		},
 		axelarGmp: {
-			evmContractAddress: '0xaD9F9FF4890077d63F05D11180796270fEA866A7',
+			evmContractAddress: '0xD4cB4288708235DE1133C82cBADAE2B90C797E43',
 			evmFunctionName: 'sunriseSwap',
 			ibcChainName: 'neutron',
 			ibcChannelId: 'channel-1097',
