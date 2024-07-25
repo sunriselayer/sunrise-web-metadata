@@ -15,7 +15,6 @@ export type LedgerMetadata = {
 		axelarGmp?: {
 			evmContractAddress: string;
 			evmFunctionName: string;
-			evmAbi: unknown[];
 			ibcChainName: string;
 			ibcChannelId: string;
 			ibcContractAddress: string;
