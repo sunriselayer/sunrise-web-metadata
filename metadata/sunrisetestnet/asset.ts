@@ -90,6 +90,23 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 			}
 		}
 	},
+	'ibc/94EB1E9A676004E74ECF47F8E4BF183F4017CE0630A4D1AC7C7D9EB9CD6A3D53': {
+		tickerDisplay: 'axlUSDC',
+		tickerSystem: 'aUSDC',
+		image:
+			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+		exponents: 6,
+		bridge: {
+			id: 'ibc',
+			originLedgerId: 'osmosis'
+		},
+		swap: {
+			uatom: {
+				interfaceProviderAddr: 'sunrise1v0h8j7x7kfys29kj4uwdudcc9y0nx6tw2f955q',
+				pool: { poolId: 8 }
+			}
+		}
+	},
 	uusdc: {
 		tickerDisplay: 'USDC',
 		tickerSystem: 'USDC',
