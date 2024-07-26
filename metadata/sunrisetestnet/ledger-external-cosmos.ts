@@ -83,6 +83,14 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 				image:
 					'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/sunrise.svg',
 				exponents: 6
+			},
+			uatom: {
+				tickerDisplay: 'ATOM',
+				tickerSystem: 'ATOM',
+				base: 'ibc/D44ACCDA02DFDFBD603CFDF6DD93862BC83E9BC5DE366FBA0A5E9BC332628551',
+				image:
+					'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
+				exponents: 6
 			}
 		},
 		addressType: AddressType.Cosmos,
