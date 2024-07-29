@@ -91,19 +91,36 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		}
 	},
 	'ibc/94EB1E9A676004E74ECF47F8E4BF183F4017CE0630A4D1AC7C7D9EB9CD6A3D53': {
-		tickerDisplay: 'axlUSDC',
+		tickerDisplay: 'axlUSDC - Osmosis',
 		tickerSystem: 'aUSDC',
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
 		exponents: 6,
 		bridge: {
-			id: 'ibc',
+			id: 'ibc_axelar',
 			originLedgerId: 'osmosis'
 		},
 		swap: {
 			uatom: {
 				interfaceProviderAddr: 'sunrise1v0h8j7x7kfys29kj4uwdudcc9y0nx6tw2f955q',
 				pool: { poolId: 8 }
+			}
+		}
+	},
+	'ibc/88012ABE034CE754022417BFEDF29F8B16C5B3338386EA20298ADCECA8329019': {
+		tickerDisplay: 'axlUSDC - Neutron',
+		tickerSystem: 'aUSDC',
+		image:
+			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+		exponents: 6,
+		bridge: {
+			id: 'ibc_axelar',
+			originLedgerId: 'neutron'
+		},
+		swap: {
+			uatom: {
+				interfaceProviderAddr: 'sunrise1v0h8j7x7kfys29kj4uwdudcc9y0nx6tw2f955q',
+				pool: { poolId: 9 }
 			}
 		}
 	},

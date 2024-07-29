@@ -19,8 +19,17 @@ export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 				exponents: 6
 			},
 			'ibc/94EB1E9A676004E74ECF47F8E4BF183F4017CE0630A4D1AC7C7D9EB9CD6A3D53': {
-				// todo change to ibc denom
-				tickerDisplay: 'axlUSDC',
+				tickerDisplay: 'axlUSDC - Osmosis',
+				tickerSystem: 'aUSDC',
+				base: '0x254d06f33bDc5b8ee05b2ea472107E300226659A',
+				symbol: 'aUSDC',
+				baseExponents: 6,
+				image:
+					'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+				exponents: 6
+			},
+			'ibc/88012ABE034CE754022417BFEDF29F8B16C5B3338386EA20298ADCECA8329019': {
+				tickerDisplay: 'axlUSDC - Neutron',
 				tickerSystem: 'aUSDC',
 				base: '0x254d06f33bDc5b8ee05b2ea472107E300226659A',
 				symbol: 'aUSDC',
@@ -34,12 +43,20 @@ export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 		explorer: {
 			txPage: 'https://sepolia.etherscan.io/tx/${txHash}'
 		},
+		// axelarGmp: {
+		// 	evmContractAddress: '0xD4cB4288708235DE1133C82cBADAE2B90C797E43',
+		// 	evmFunctionName: 'sunriseSwap',
+		// 	ibcChainName: 'osmosis-7',
+		// 	ibcChannelId: 'channel-8616',
+		// 	ibcContractAddress: 'osmo184j83glglw75ca6js53fn0tuuhzrfqeq3ealcnsnr679nhcw9f7smytymu'
+		// }
 		axelarGmp: {
 			evmContractAddress: '0xD4cB4288708235DE1133C82cBADAE2B90C797E43',
 			evmFunctionName: 'sunriseSwap',
-			ibcChainName: 'osmosis-7',
-			ibcChannelId: 'channel-8616',
-			ibcContractAddress: 'osmo184j83glglw75ca6js53fn0tuuhzrfqeq3ealcnsnr679nhcw9f7smytymu'
+			ibcChainName: 'neutron',
+			ibcSrcChannelId: 'channel-1097',
+			ibcDstChannelId: 'channel-1',
+			ibcContractAddress: 'neutron1xe99hnxued0lehe6xe8x7z2d5c3q9c92g50tchyqx3vcjatyht3qph8wrt'
 		}
 	},
 	ethereummunbai: {

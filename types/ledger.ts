@@ -16,7 +16,8 @@ export type LedgerMetadata = {
 			evmContractAddress: string;
 			evmFunctionName: string;
 			ibcChainName: string;
-			ibcChannelId: string;
+			ibcSrcChannelId: string;
+			ibcDstChannelId: string;
 			ibcContractAddress: string;
 		};
 		explorer?: {
