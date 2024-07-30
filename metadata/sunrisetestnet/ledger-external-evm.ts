@@ -223,11 +223,11 @@ export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 			]
 		}
 	},
-	ethereummunbai: {
-		name: 'Ethereum Munbai Testnet',
+	ethereum: {
+		name: 'Ethereum Mainnet',
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg',
-		rpc: ['https://rpc-mumbai.maticvigil.com/'],
+		rpc: ['https://rpc.ankr.com/eth'],
 		assets: {
 			eth: {
 				// todo change to ibc denom
