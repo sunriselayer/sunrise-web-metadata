@@ -51,19 +51,19 @@ export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 		// 	ibcContractAddress: 'osmo184j83glglw75ca6js53fn0tuuhzrfqeq3ealcnsnr679nhcw9f7smytymu'
 		// }
 		axelarGmp: {
-			evmContractAddress: '0xD4cB4288708235DE1133C82cBADAE2B90C797E43',
-			evmFunctionName: 'sunriseSwap',
+			evmContractAddress: '0x8ef2c2b9825a52c44bff05b4dd7b72899ccbd4e4',
+			evmFunctionName: 'sendToSunrise',
 			ibcChainName: 'neutron',
 			ibcSrcChannelId: 'channel-1097',
 			ibcDstChannelId: 'channel-1',
-			ibcContractAddress: 'neutron1xe99hnxued0lehe6xe8x7z2d5c3q9c92g50tchyqx3vcjatyht3qph8wrt'
+			ibcContractAddress: 'neutron1wqnth66c2euck0zl5gen6kmsafx8p7pnrmyt02u3har0a8urhwms90hp9j'
 		}
 	},
-	ethereummunbai: {
-		name: 'Ethereum Munbai Testnet',
+	ethereum: {
+		name: 'Ethereum Mainnet',
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg',
-		rpc: ['https://rpc-mumbai.maticvigil.com/'],
+		rpc: ['https://rpc.ankr.com/eth'],
 		assets: {
 			eth: {
 				// todo change to ibc denom
