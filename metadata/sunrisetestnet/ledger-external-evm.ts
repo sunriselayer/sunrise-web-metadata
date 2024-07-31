@@ -51,6 +51,7 @@ export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 		// 	ibcContractAddress: 'osmo184j83glglw75ca6js53fn0tuuhzrfqeq3ealcnsnr679nhcw9f7smytymu'
 		// }
 		axelarGmp: {
+			evmChainName: 'ethereum-sepolia',
 			evmContractAddress: '0x8ef2c2b9825a52c44bff05b4dd7b72899ccbd4e4',
 			evmFunctionName: 'sendToSunrise',
 			ibcChainName: 'neutron',

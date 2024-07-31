@@ -13,6 +13,7 @@ export type LedgerMetadata = {
 		srcChannel?: string;
 		dstChannel?: string;
 		axelarGmp?: {
+			evmChainName: string;
 			evmContractAddress: string;
 			evmFunctionName: string;
 			ibcChainName: string;
