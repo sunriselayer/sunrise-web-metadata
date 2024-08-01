@@ -110,6 +110,7 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 	'ibc/88012ABE034CE754022417BFEDF29F8B16C5B3338386EA20298ADCECA8329019': {
 		tickerDisplay: 'axlUSDC - Neutron',
 		tickerSystem: 'aUSDC',
+		symbol: 'aUSDC',
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
 		exponents: 6,
