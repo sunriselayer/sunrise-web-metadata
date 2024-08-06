@@ -3,7 +3,7 @@ import { AddressType } from '../../types/wallet';
 
 export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 	ethereumsepolia: {
-		name: 'Ethereum Sepolia Testnet',
+		name: 'Ethereum Sepolia',
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg',
 		rpc: ['https://sepolia.infura.io/v3/'],

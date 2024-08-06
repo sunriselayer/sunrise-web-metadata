@@ -50,6 +50,10 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 			stuatom: {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
 				pool: { poolId: 6 }
+			},
+			'ibc/88012ABE034CE754022417BFEDF29F8B16C5B3338386EA20298ADCECA8329019': {
+				interfaceProviderAddr: 'sunrise1v0h8j7x7kfys29kj4uwdudcc9y0nx6tw2f955q',
+				pool: { poolId: 9 }
 			}
 		}
 	},
