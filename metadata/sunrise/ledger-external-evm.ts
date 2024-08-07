@@ -4,7 +4,7 @@ import { AddressType } from '../../types/wallet';
 export const sunriseExternalEvmMetadata: LedgerMetadata = {
 	ethereum: {
 		name: 'Ethereum',
-		chainId: '1',
+		chainId: '0x1',
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg',
 		rpc: ['https://mainnet.infura.io/v3/c2b70c37395240a4b7cb6303ebb55b81'],
@@ -42,7 +42,7 @@ export const sunriseExternalEvmMetadata: LedgerMetadata = {
 	},
 	optimism: {
 		name: 'Optimism',
-		chainId: '10',
+		chainId: 'Oxa',
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/optimism/images/op.svg',
 		rpc: ['https://optimism-mainnet.infura.io/v3/c2b70c37395240a4b7cb6303ebb55b81'],
@@ -59,7 +59,7 @@ export const sunriseExternalEvmMetadata: LedgerMetadata = {
 	},
 	oasys: {
 		name: 'Oasys',
-		chainId: '248',
+		chainId: '0xf8',
 		image: 'https://s2.coinmarketcap.com/static/img/coins/64x64/22265.png',
 		rpc: ['https://rpc.mainnet.oasys.games'],
 		assets: {
