@@ -63,7 +63,7 @@ export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 			ibcChainName: 'neutron',
 			ibcSrcChannelId: 'channel-1097',
 			ibcDstChannelId: 'channel-1',
-			ibcContractAddress: 'neutron13lw4uyaxc09d3qvgunc8crtxcvwd8pn5xzx2xzlw53nsfgq3y8ps4q2dr5'
+			ibcContractAddress: 'neutron1ndqcvden2nj6htq9rdpjtvcx83wyypsysj2tkj85p6p0vdc7u7fsfvg735'
 		}
 	},
 	ethereum: {
