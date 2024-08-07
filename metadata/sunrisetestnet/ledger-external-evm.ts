@@ -96,6 +96,11 @@ export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 		chainId: '0x249c',
 		image: 'https://s2.coinmarketcap.com/static/img/coins/64x64/22265.png',
 		rpc: ['https://rpc.testnet.oasys.games/'],
+		nativeCurrency: {
+			name: 'OAS',
+			symbol: 'OAS',
+			decimals: 18
+		},
 		assets: {
 			oas: {
 				// todo change to ibc denom
