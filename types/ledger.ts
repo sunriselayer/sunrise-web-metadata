@@ -21,6 +21,11 @@ export type LedgerMetadata = {
 			ibcDstChannelId: string;
 			ibcContractAddress: string;
 		};
+		nativeCurrency?: {
+			name: string;
+			symbol: string;
+			decimals: number;
+		};
 		explorer?: {
 			txPage: string; // ${txHash}
 		};

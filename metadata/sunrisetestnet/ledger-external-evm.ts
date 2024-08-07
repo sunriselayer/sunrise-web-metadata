@@ -4,9 +4,15 @@ import { AddressType } from '../../types/wallet';
 export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 	ethereumsepolia: {
 		name: 'Ethereum Sepolia',
+		chainId: '11155111',
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg',
-		rpc: ['https://sepolia.infura.io/v3/'],
+		rpc: ['https://sepolia.infura.io/v3/c2b70c37395240a4b7cb6303ebb55b81'],
+		nativeCurrency: {
+			name: 'ETH',
+			symbol: 'ETH',
+			decimals: 18
+		},
 		assets: {
 			eth: {
 				// todo change to ibc denom
@@ -62,9 +68,15 @@ export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 	},
 	ethereum: {
 		name: 'Ethereum Mainnet',
+		chainId: '1',
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg',
-		rpc: ['https://rpc.ankr.com/eth'],
+		rpc: ['https://mainnet.infura.io/v3/c2b70c37395240a4b7cb6303ebb55b81'],
+		nativeCurrency: {
+			name: 'ETH',
+			symbol: 'ETH',
+			decimals: 18
+		},
 		assets: {
 			eth: {
 				// todo change to ibc denom
@@ -81,6 +93,7 @@ export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 	},
 	oasystestnet: {
 		name: 'Oasys Testnet',
+		chainId: '9372',
 		image: 'https://s2.coinmarketcap.com/static/img/coins/64x64/22265.png',
 		rpc: ['https://rpc.testnet.oasys.games/'],
 		assets: {
