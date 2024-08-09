@@ -35,7 +35,7 @@ export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 				exponents: 6
 			},
 			'ibc/88012ABE034CE754022417BFEDF29F8B16C5B3338386EA20298ADCECA8329019': {
-				tickerDisplay: 'axlUSDC - Neutron',
+				tickerDisplay: 'axlUSDC',
 				tickerSystem: 'aUSDC',
 				base: '0x254d06f33bDc5b8ee05b2ea472107E300226659A',
 				symbol: 'aUSDC',
