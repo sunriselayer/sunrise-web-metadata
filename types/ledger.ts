@@ -27,6 +27,7 @@ export type LedgerMetadata = {
 			decimals: number;
 		};
 		explorer?: {
+			url: string;
 			txPage: string; // ${txHash}
 		};
 	};

@@ -9,7 +9,7 @@ export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg',
 		rpc: ['https://sepolia.infura.io/v3/c2b70c37395240a4b7cb6303ebb55b81'],
 		nativeCurrency: {
-			name: 'ETH',
+			name: 'SepoliaETH',
 			symbol: 'ETH',
 			decimals: 18
 		},
@@ -47,6 +47,7 @@ export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 		},
 		addressType: AddressType.Evm,
 		explorer: {
+			url: 'https://sepolia.etherscan.io/',
 			txPage: 'https://sepolia.etherscan.io/tx/${txHash}'
 		},
 		// axelarGmp: {
