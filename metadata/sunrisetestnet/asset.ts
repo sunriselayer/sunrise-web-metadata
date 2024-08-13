@@ -45,11 +45,11 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		swap: {
 			[ASSET_ID_RISE]: {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 1 }
+				pool: { poolId: 0 }
 			},
 			'ibc/stuatom': {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 7 }
+				pool: { poolId: 6 }
 			}
 		}
 	},
@@ -66,7 +66,7 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		swap: {
 			'ibc/uatom': {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 7 }
+				pool: { poolId: 6 }
 			}
 		}
 	},
@@ -83,19 +83,19 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		swap: {
 			[ASSET_ID_RISE]: {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 2 }
+				pool: { poolId: 1 }
 			},
 			'ibc/uusdt': {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 4 }
+				pool: { poolId: 3 }
 			},
 			'ibc/ushib': {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 5 }
+				pool: { poolId: 4 }
 			},
 			'ibc/uibgt': {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 6 }
+				pool: { poolId: 5 }
 			}
 		}
 	},
@@ -112,11 +112,11 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		swap: {
 			[ASSET_ID_RISE]: {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 3 }
+				pool: { poolId: 2 }
 			},
 			'ibc/uusdc': {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 4 }
+				pool: { poolId: 3 }
 			}
 		}
 	},
@@ -128,7 +128,7 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		swap: {
 			'ibc/uusdc': {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 6 }
+				pool: { poolId: 5 }
 			}
 		}
 	},
@@ -162,7 +162,7 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		swap: {
 			'ibc/uusdc': {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 5 }
+				pool: { poolId: 4 }
 			}
 		}
 	},
