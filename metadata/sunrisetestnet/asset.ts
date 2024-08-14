@@ -2,6 +2,10 @@ import type { AssetMetadata } from '../../types/asset';
 
 export const ASSET_ID_RISE = 'urise';
 export const ASSET_ID_VRISE = 'uvrise';
+export const ASSET_ID_OSMO_OSMOSIS =
+	'ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518';
+export const ASSET_ID_AUSDC_NEUTRON =
+	'ibc/88012ABE034CE754022417BFEDF29F8B16C5B3338386EA20298ADCECA8329019';
 
 export const sunriseTestAssetMetadata: AssetMetadata = {
 	[ASSET_ID_RISE]: {
@@ -51,7 +55,7 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
 				pool: { poolId: 6 }
 			},
-			'ibc/88012ABE034CE754022417BFEDF29F8B16C5B3338386EA20298ADCECA8329019': {
+			[ASSET_ID_AUSDC_NEUTRON]: {
 				interfaceProviderAddr: 'sunrise1v0h8j7x7kfys29kj4uwdudcc9y0nx6tw2f955q',
 				pool: { poolId: 9 }
 			}
@@ -74,7 +78,7 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 			}
 		}
 	},
-	'ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518': {
+	[ASSET_ID_OSMO_OSMOSIS]: {
 		tickerDisplay: 'OSMO',
 		tickerSystem: 'OSMO',
 		image: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg',
@@ -84,18 +88,18 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 			originLedgerId: 'osmosis'
 		},
 		swap: {
-			[ASSET_ID_RISE]: {
-				interfaceProviderAddr: 'sunrise1v0h8j7x7kfys29kj4uwdudcc9y0nx6tw2f955q',
-				pool: { poolId: 8 }
-			},
 			uatom: {
 				interfaceProviderAddr: 'sunrise1v0h8j7x7kfys29kj4uwdudcc9y0nx6tw2f955q',
 				pool: { poolId: 7 }
+			},
+			[ASSET_ID_AUSDC_NEUTRON]: {
+				interfaceProviderAddr: 'sunrise1v0h8j7x7kfys29kj4uwdudcc9y0nx6tw2f955q',
+				pool: { poolId: 10 }
 			}
 		}
 	},
 	'ibc/94EB1E9A676004E74ECF47F8E4BF183F4017CE0630A4D1AC7C7D9EB9CD6A3D53': {
-		tickerDisplay: 'axlUSDC - Osmosis',
+		tickerDisplay: 'axlUSDC(osmo)',
 		tickerSystem: 'aUSDC',
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
@@ -111,8 +115,8 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 			}
 		}
 	},
-	'ibc/88012ABE034CE754022417BFEDF29F8B16C5B3338386EA20298ADCECA8329019': {
-		tickerDisplay: 'axlUSDC - Neutron',
+	[ASSET_ID_AUSDC_NEUTRON]: {
+		tickerDisplay: 'axlUSDC',
 		tickerSystem: 'aUSDC',
 		symbol: 'aUSDC',
 		image:
@@ -123,9 +127,9 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 			originLedgerId: 'neutron'
 		},
 		swap: {
-			uatom: {
+			[ASSET_ID_OSMO_OSMOSIS]: {
 				interfaceProviderAddr: 'sunrise1v0h8j7x7kfys29kj4uwdudcc9y0nx6tw2f955q',
-				pool: { poolId: 9 }
+				pool: { poolId: 10 }
 			}
 		}
 	},

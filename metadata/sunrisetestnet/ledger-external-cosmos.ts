@@ -1,6 +1,6 @@
 import type { LedgerMetadata } from '../../types/ledger';
 import { AddressType } from '../../types/wallet';
-import { ASSET_ID_RISE } from './asset';
+import { ASSET_ID_OSMO_OSMOSIS, ASSET_ID_RISE } from './asset';
 
 export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 	cosmoshubtestnet: {
@@ -68,7 +68,7 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 		image: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg',
 		rpc: ['https://rpc.testnet.osmosis.zone/'],
 		assets: {
-			'ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518': {
+			[ASSET_ID_OSMO_OSMOSIS]: {
 				tickerDisplay: 'OSMO',
 				tickerSystem: 'OSMO',
 				base: 'uosmo',
@@ -85,6 +85,7 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 				exponents: 6
 			},
 			uatom: {
+				// todo change to ibc denom
 				tickerDisplay: 'ATOM',
 				tickerSystem: 'ATOM',
 				base: 'ibc/D44ACCDA02DFDFBD603CFDF6DD93862BC83E9BC5DE366FBA0A5E9BC332628551',
