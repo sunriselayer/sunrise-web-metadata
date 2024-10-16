@@ -9,7 +9,9 @@ export enum WalletType {
 	KeplrExtension = 'keplr-extension',
 	LeapExtension = 'leap-extension',
 	XdefiExtension = 'xdefi-extension',
-	MetamaskExtension = 'metamask-extension'
+	MetamaskExtension = 'metamask-extension',
+	WalletConnectEvm = 'wallet-connect-evm',
+	WalletConnectSvm = 'wallet-connect-svm'
 }
 
 export type AddressTypeMetadata = Record<
