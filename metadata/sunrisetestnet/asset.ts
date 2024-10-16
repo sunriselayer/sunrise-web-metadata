@@ -21,7 +21,7 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 			},
 			uusdc: {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 1 }
+				pool: { poolId: 0 }
 			},
 			uusdt: {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
@@ -154,7 +154,7 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 			},
 			ushib: {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 4 }
+				pool: { poolId: 3 }
 			},
 			uibgt: {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
