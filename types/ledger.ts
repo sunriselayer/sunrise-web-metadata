@@ -13,14 +13,21 @@ export type LedgerMetadata = {
 		srcChannel?: string;
 		dstChannel?: string;
 		axelarGmp?: {
+			evmChainName: string;
 			evmContractAddress: string;
 			evmFunctionName: string;
-			evmAbi: unknown[];
 			ibcChainName: string;
-			ibcChannelId: string;
+			ibcSrcChannelId: string;
+			ibcDstChannelId: string;
 			ibcContractAddress: string;
 		};
+		nativeCurrency?: {
+			name: string;
+			symbol: string;
+			decimals: number;
+		};
 		explorer?: {
+			url: string;
 			txPage: string; // ${txHash}
 		};
 	};

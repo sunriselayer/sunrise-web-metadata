@@ -4,9 +4,15 @@ import { AddressType } from '../../types/wallet';
 export const sunriseExternalEvmMetadata: LedgerMetadata = {
 	ethereum: {
 		name: 'Ethereum',
+		chainId: '0x1',
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg',
-		rpc: ['https://rpc.ankr.com/eth'],
+		rpc: ['https://mainnet.infura.io/v3/c2b70c37395240a4b7cb6303ebb55b81'],
+		nativeCurrency: {
+			name: 'ETH',
+			symbol: 'ETH',
+			decimals: 18
+		},
 		assets: {
 			eth: {
 				tickerDisplay: 'ETH',
@@ -41,9 +47,15 @@ export const sunriseExternalEvmMetadata: LedgerMetadata = {
 	},
 	optimism: {
 		name: 'Optimism',
+		chainId: 'Oxa',
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/optimism/images/op.svg',
-		rpc: ['https://rpc.ankr.com/optimism'],
+		rpc: ['https://optimism-mainnet.infura.io/v3/c2b70c37395240a4b7cb6303ebb55b81'],
+		nativeCurrency: {
+			name: 'ETH',
+			symbol: 'ETH',
+			decimals: 18
+		},
 		assets: {
 			op: {
 				tickerDisplay: 'OP',
@@ -57,8 +69,14 @@ export const sunriseExternalEvmMetadata: LedgerMetadata = {
 	},
 	oasys: {
 		name: 'Oasys',
+		chainId: '0xf8',
 		image: 'https://s2.coinmarketcap.com/static/img/coins/64x64/22265.png',
-		rpc: [],
+		rpc: ['https://rpc.mainnet.oasys.games'],
+		nativeCurrency: {
+			name: 'OAS',
+			symbol: 'OAS',
+			decimals: 18
+		},
 		assets: {
 			oas: {
 				tickerDisplay: 'OAS',
