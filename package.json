@@ -4,5 +4,9 @@
 	"devDependencies": {
 		"@ianvs/prettier-plugin-sort-imports": "^4.3.1",
 		"prettier": "^3.3.3"
+	},
+	"dependencies": {
+		"@bufbuild/protobuf": "^2.2.3",
+		"@sunriselayer/client": "^0.4.0-rc5"
 	}
 }
