@@ -17,5 +17,16 @@ export const sunriseAssetMetadata: AssetMetadata = {
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/vrise.svg',
 		exponents: 6
+	},
+	uusdc: {
+		tickerDisplay: 'USDC',
+		tickerSystem: 'USDC',
+		image:
+			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+		exponents: 6,
+		bridge: {
+			id: 'ibc',
+			originLedgerId: 'noble'
+		}
 	}
 };
