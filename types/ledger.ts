@@ -12,15 +12,6 @@ export type LedgerMetadata = {
 		chainId?: string;
 		srcChannel?: string;
 		dstChannel?: string;
-		axelarGmp?: {
-			evmChainName: string;
-			evmContractAddress: string;
-			evmFunctionName: string;
-			ibcChainName: string;
-			ibcSrcChannelId: string;
-			ibcDstChannelId: string;
-			ibcContractAddress: string;
-		};
 		nativeCurrency?: {
 			name: string;
 			symbol: string;
