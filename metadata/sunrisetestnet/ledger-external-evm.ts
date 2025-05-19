@@ -15,16 +15,6 @@ export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 			decimals: 18
 		},
 		assets: {
-			'ibc/94EB1E9A676004E74ECF47F8E4BF183F4017CE0630A4D1AC7C7D9EB9CD6A3D53': {
-				tickerDisplay: 'axlUSDC - Osmosis',
-				tickerSystem: 'aUSDC',
-				base: '0x254d06f33bDc5b8ee05b2ea472107E300226659A',
-				symbol: 'aUSDC',
-				baseExponents: 6,
-				image:
-					'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
-				exponents: 6
-			},
 			[ASSET_ID_AUSDC_NEUTRON]: {
 				tickerDisplay: 'axlUSDC',
 				tickerSystem: 'aUSDC',
