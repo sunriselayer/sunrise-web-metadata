@@ -21,21 +21,21 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
 				strategy: {
 					case: 'pool',
-					value: create(RoutePoolSchema, { poolId: BigInt(0) })
+					value: create(RoutePoolSchema, { poolId: BigInt(1) })
 				}
 			},
 			uusdc: {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
 				strategy: {
 					case: 'pool',
-					value: create(RoutePoolSchema, { poolId: BigInt(1) })
+					value: create(RoutePoolSchema, { poolId: BigInt(2) })
 				}
 			},
 			uusdt: {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
 				strategy: {
 					case: 'pool',
-					value: create(RoutePoolSchema, { poolId: BigInt(2) })
+					value: create(RoutePoolSchema, { poolId: BigInt(3) })
 				}
 			}
 		}
@@ -62,23 +62,9 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
 				strategy: {
 					case: 'pool',
-					value: create(RoutePoolSchema, { poolId: BigInt(0) })
+					value: create(RoutePoolSchema, { poolId: BigInt(1) })
 				}
 			},
-			stuatom: {
-				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				strategy: {
-					case: 'pool',
-					value: create(RoutePoolSchema, { poolId: BigInt(6) })
-				}
-			},
-			[ASSET_ID_AUSDC_NEUTRON]: {
-				interfaceProviderAddr: 'sunrise1v0h8j7x7kfys29kj4uwdudcc9y0nx6tw2f955q',
-				strategy: {
-					case: 'pool',
-					value: create(RoutePoolSchema, { poolId: BigInt(9) })
-				}
-			}
 		}
 	},
 	stuatom: {
@@ -91,15 +77,6 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 			id: 'ibc',
 			originLedgerId: 'stride'
 		},
-		swap: {
-			uatom: {
-				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				strategy: {
-					case: 'pool',
-					value: create(RoutePoolSchema, { poolId: BigInt(6) })
-				}
-			}
-		}
 	},
 	[ASSET_ID_OSMO_OSMOSIS]: {
 		tickerDisplay: 'OSMO',
@@ -110,22 +87,6 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 			id: 'ibc',
 			originLedgerId: 'osmosis'
 		},
-		swap: {
-			uatom: {
-				interfaceProviderAddr: 'sunrise1v0h8j7x7kfys29kj4uwdudcc9y0nx6tw2f955q',
-				strategy: {
-					case: 'pool',
-					value: create(RoutePoolSchema, { poolId: BigInt(7) })
-				}
-			},
-			[ASSET_ID_AUSDC_NEUTRON]: {
-				interfaceProviderAddr: 'sunrise1v0h8j7x7kfys29kj4uwdudcc9y0nx6tw2f955q',
-				strategy: {
-					case: 'pool',
-					value: create(RoutePoolSchema, { poolId: BigInt(10) })
-				}
-			}
-		}
 	},
 	uusdc: {
 		tickerDisplay: 'USDC',
@@ -142,16 +103,9 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
 				strategy: {
 					case: 'pool',
-					value: create(RoutePoolSchema, { poolId: BigInt(1) })
+					value: create(RoutePoolSchema, { poolId: BigInt(2) })
 				}
 			},
-			uusdt: {
-				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				strategy: {
-					case: 'pool',
-					value: create(RoutePoolSchema, { poolId: BigInt(3) })
-				}
-			}
 		}
 	},
 	uusdt: {
@@ -166,13 +120,6 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		},
 		swap: {
 			[ASSET_ID_RISE]: {
-				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				strategy: {
-					case: 'pool',
-					value: create(RoutePoolSchema, { poolId: BigInt(2) })
-				}
-			},
-			uusdc: {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
 				strategy: {
 					case: 'pool',
