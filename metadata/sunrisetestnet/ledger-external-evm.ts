@@ -31,6 +31,12 @@ export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 			url: 'https://sepolia.etherscan.io/',
 			txPage: 'https://sepolia.etherscan.io/tx/${txHash}'
 		},
+		ibcEureka: {
+			ics20TransferAddress: '0x3a4e076D1c5EBfC813993c497Bb284598121b515',
+			ics26RouterAddress: '0x3fcBB8b5d85FB5F77603e11536b5E90FeE37e6c0',
+			clientId: 'hub-testnet-0', // For Cosmos Hub testnet connection
+			counterpartyClientId: '08-wasm-262'
+		}
 	}
 	// oasystestnet: {
 	// 	name: 'Oasys Testnet',

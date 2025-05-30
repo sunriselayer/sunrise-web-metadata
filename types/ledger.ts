@@ -1,3 +1,4 @@
+import type { Hex } from 'viem';
 import type { AssetMetadata } from './asset';
 import { AddressType } from './wallet';
 
@@ -21,5 +22,13 @@ export type LedgerMetadata = {
 			url: string;
 			txPage: string; // ${txHash}
 		};
+		ibcEureka?: IBCEurekaConfig;
 	};
 };
+
+export interface IBCEurekaConfig {
+	ics20TransferAddress: Hex;
+	ics26RouterAddress: Hex;
+	clientId: string;
+	counterpartyClientId: string;
+}
