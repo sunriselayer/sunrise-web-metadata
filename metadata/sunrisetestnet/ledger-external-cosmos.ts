@@ -1,74 +1,15 @@
 import type { LedgerMetadata } from '../../types/ledger';
 import { AddressType } from '../../types/wallet';
-import { ASSET_ID_OSMO_OSMOSIS, ASSET_ID_RISE } from './asset';
+import { ASSET_ID_PROVIDER_ATOM, ASSET_ID_RISE } from './asset';
 
 export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
-	// cosmoshubtestnet: {
-	// 	name: 'Cosmos Hub Public Testnet',
-	// 	image:
-	// 		'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
-	// 	rpc: ['https://rpc-theta.osmotest5.osmosis.zone/'],
-	// 	assets: {
-	// 		uatom: {
-	// 			// todo change to ibc denom
-	// 			tickerDisplay: 'ATOM',
-	// 			tickerSystem: 'ATOM',
-	// 			base: 'uatom',
-	// 			image:
-	// 				'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
-	// 			exponents: 6
-	// 		}
-	// 	},
-	// 	addressType: AddressType.Cosmos,
-	// 	prefix: 'cosmos',
-	// 	chainId: 'theta-testnet-001'
-	// },
-	// celestiatestnet2: {
-	// 	name: 'Celestia Arabica Testnet',
-	// 	image:
-	// 		'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg',
-	// 	rpc: ['https://api.celestia-arabica-11.com'],
-	// 	assets: {
-	// 		utia: {
-	// 			// todo change to ibc denom
-	// 			tickerDisplay: 'TIA',
-	// 			tickerSystem: 'TIA',
-	// 			base: 'utia',
-	// 			image:
-	// 				'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg',
-	// 			exponents: 6
-	// 		}
-	// 	},
-	// 	addressType: AddressType.Cosmos,
-	// 	prefix: 'celestia',
-	// 	chainId: 'arabica-11'
-	// },
-	// celestiatestnet3: {
-	// 	name: 'Celestia Mocha Testnet',
-	// 	image:
-	// 		'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg',
-	// 	rpc: ['https://rpc-mocha.pops.one/'],
-	// 	assets: {
-	// 		utia: {
-	// 			// todo change to ibc denom
-	// 			tickerDisplay: 'TIA',
-	// 			tickerSystem: 'TIA',
-	// 			base: 'utia',
-	// 			image:
-	// 				'https://raw.githubusercontent.com/cosmos/chain-registry/master/celestia/images/celestia.svg',
-	// 			exponents: 6
-	// 		}
-	// 	},
-	// 	addressType: AddressType.Cosmos,
-	// 	prefix: 'celestia',
-	// 	chainId: 'mocha-4'
-	// },
-	osmosistestnet: {
-		name: 'Osmosis Testnet',
-		image: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg',
-		rpc: ['https://rpc.testnet.osmosis.zone/'],
+	cosmosicsprovidertestnet: {
+		name: 'Cosmos ICS Provider Testnet',
+		image:
+			'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
+		rpc: ['https://rpc.provider-sentry-01.ics-testnet.polypore.xyz'],
 		assets: {
-			[ASSET_ID_OSMO_OSMOSIS]: {
+			[ASSET_ID_PROVIDER_ATOM]: {
 				tickerDisplay: 'OSMO',
 				tickerSystem: 'OSMO',
 				base: 'uosmo',
@@ -79,25 +20,16 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 			[ASSET_ID_RISE]: {
 				tickerDisplay: 'RISE',
 				tickerSystem: 'RISE',
-				base: 'ibc/447BA50F36A959C65D475737B219095045AEFD50DF250DBCBCD659EAC15C904D',
+				base: 'ibc/7C93F76A3800F40EB344E4B7130FEF99D51C5C0489C393112206A8065D5CFCBC',
 				image:
 					'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/sunrise.svg',
-				exponents: 6
-			},
-			uatom: {
-				// todo change to ibc denom
-				tickerDisplay: 'ATOM',
-				tickerSystem: 'ATOM',
-				base: 'ibc/D44ACCDA02DFDFBD603CFDF6DD93862BC83E9BC5DE366FBA0A5E9BC332628551',
-				image:
-					'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
 				exponents: 6
 			}
 		},
 		addressType: AddressType.Cosmos,
-		prefix: 'osmo',
-		chainId: 'osmo-test-5',
-		srcChannel: 'channel-8616',
+		prefix: 'cosmos',
+		chainId: 'provider',
+		srcChannel: 'channel-476',
 		dstChannel: 'channel-0'
 	}
 };

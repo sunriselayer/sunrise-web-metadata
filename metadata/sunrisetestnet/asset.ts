@@ -4,10 +4,8 @@ import type { AssetMetadata } from '../../types/asset';
 
 export const ASSET_ID_RISE = 'urise';
 export const ASSET_ID_VRISE = 'uvrise';
-export const ASSET_ID_OSMO_OSMOSIS =
-	'ibc/ED07A3391A112B175915CD8FAF43A2DA8E4790EDE12566649D0C2F97716B8518';
-export const ASSET_ID_AUSDC_NEUTRON =
-	'ibc/88012ABE034CE754022417BFEDF29F8B16C5B3338386EA20298ADCECA8329019';
+export const ASSET_ID_PROVIDER_ATOM =
+	'ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2';
 
 export const sunriseTestAssetMetadata: AssetMetadata = {
 	[ASSET_ID_RISE]: {
@@ -64,7 +62,7 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 					case: 'pool',
 					value: create(RoutePoolSchema, { poolId: BigInt(1) })
 				}
-			},
+			}
 		}
 	},
 	stuatom: {
@@ -76,17 +74,18 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		bridge: {
 			id: 'ibc',
 			originLedgerId: 'stride'
-		},
+		}
 	},
-	[ASSET_ID_OSMO_OSMOSIS]: {
-		tickerDisplay: 'OSMO',
-		tickerSystem: 'OSMO',
-		image: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg',
+	[ASSET_ID_PROVIDER_ATOM]: {
+		tickerDisplay: 'ATOM',
+		tickerSystem: 'ATOM',
+		image:
+			'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
 		exponents: 6,
 		bridge: {
 			id: 'ibc',
-			originLedgerId: 'osmosis'
-		},
+			originLedgerId: 'cosmosicsprovidertestnet'
+		}
 	},
 	uusdc: {
 		tickerDisplay: 'USDC',
@@ -105,7 +104,7 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 					case: 'pool',
 					value: create(RoutePoolSchema, { poolId: BigInt(2) })
 				}
-			},
+			}
 		}
 	},
 	uusdt: {

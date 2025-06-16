@@ -49,10 +49,13 @@ export const sunriseExternalEvmMetadata: LedgerMetadata = {
 			txPage: 'https://etherscan.io/tx/${txHash}'
 		},
 		ibcEureka: {
-			ics20TransferAddress: '0xa348CfE719B63151F228e3C30EB424BA5a983012',
-			ics26RouterAddress: '0x3aF134307D5Ee90faa2ba9Cdba14ba66414CF1A7',
-			clientId: 'cosmoshub-0', // For Cosmos Hub mainnet connection
-			counterpartyClientId: '08-wasm-1369'
+			ibcChain: 'cosmos',
+			config: {
+				ics20TransferAddress: '0xa348CfE719B63151F228e3C30EB424BA5a983012',
+				ics26RouterAddress: '0x3aF134307D5Ee90faa2ba9Cdba14ba66414CF1A7',
+				clientId: 'cosmoshub-0', // For Cosmos Hub mainnet connection
+				counterpartyClientId: '08-wasm-1369'
+			}
 		}
 	},
 	optimism: {

@@ -1,6 +1,6 @@
 import type { LedgerMetadata } from '../../types/ledger';
 import { AddressType } from '../../types/wallet';
-import { ASSET_ID_AUSDC_NEUTRON } from './asset';
+import { ASSET_ID_PROVIDER_ATOM } from './asset';
 
 export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 	ethereumsepolia: {
@@ -15,14 +15,14 @@ export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 			decimals: 18
 		},
 		assets: {
-			[ASSET_ID_AUSDC_NEUTRON]: {
-				tickerDisplay: 'axlUSDC',
-				tickerSystem: 'aUSDC',
-				base: '0x254d06f33bDc5b8ee05b2ea472107E300226659A',
-				symbol: 'aUSDC',
-				baseExponents: 6,
+			[ASSET_ID_PROVIDER_ATOM]: {
+				tickerDisplay: 'ATOM',
+				tickerSystem: 'transfer/hub-testnet-0/uatom',
+				base: '0xc12f6ce3f6f605ca054817290e58a20d91def445?a=0x4793755541ae9f950a68fc7fc2b3bd2cc9397b9a',
+				symbol: 'ATOM',
+				baseExponents: 18,
 				image:
-					'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+					'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
 				exponents: 6
 			}
 		},
@@ -32,31 +32,13 @@ export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 			txPage: 'https://sepolia.etherscan.io/tx/${txHash}'
 		},
 		ibcEureka: {
-			ics20TransferAddress: '0x3a4e076D1c5EBfC813993c497Bb284598121b515',
-			ics26RouterAddress: '0x3fcBB8b5d85FB5F77603e11536b5E90FeE37e6c0',
-			clientId: 'hub-testnet-0', // For Cosmos Hub testnet connection
-			counterpartyClientId: '08-wasm-262'
+			ibcChain: 'cosmosicsprovidertestnet',
+			config: {
+				ics20TransferAddress: '0x3a4e076D1c5EBfC813993c497Bb284598121b515',
+				ics26RouterAddress: '0x3fcBB8b5d85FB5F77603e11536b5E90FeE37e6c0',
+				clientId: 'hub-testnet-0', // For Cosmos Hub testnet connection
+				counterpartyClientId: '08-wasm-262'
+			}
 		}
 	}
-	// oasystestnet: {
-	// 	name: 'Oasys Testnet',
-	// 	chainId: '0x249c',
-	// 	image: 'https://s2.coinmarketcap.com/static/img/coins/64x64/22265.png',
-	// 	rpc: ['https://rpc.testnet.oasys.games/'],
-	// 	nativeCurrency: {
-	// 		name: 'OAS',
-	// 		symbol: 'OAS',
-	// 		decimals: 18
-	// 	},
-	// 	assets: {
-	// 		oas: {
-	// 			// todo change to ibc denom
-	// 			tickerDisplay: 'OAS',
-	// 			tickerSystem: 'OAS',
-	// 			image: 'https://s2.coinmarketcap.com/static/img/coins/64x64/22265.png',
-	// 			exponents: 6
-	// 		}
-	// 	},
-	// 	addressType: AddressType.Evm
-	// }
 };

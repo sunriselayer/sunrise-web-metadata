@@ -22,7 +22,10 @@ export type LedgerMetadata = {
 			url: string;
 			txPage: string; // ${txHash}
 		};
-		ibcEureka?: IBCEurekaConfig;
+		ibcEureka?: {
+			ibcChain: string;
+			config: IBCEurekaConfig;
+		};
 	};
 };
 
