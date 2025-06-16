@@ -18,9 +18,9 @@ export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 			[ASSET_ID_PROVIDER_ATOM]: {
 				tickerDisplay: 'ATOM',
 				tickerSystem: 'transfer/hub-testnet-0/uatom',
-				base: '0xc12f6ce3f6f605ca054817290e58a20d91def445?a=0x4793755541ae9f950a68fc7fc2b3bd2cc9397b9a',
+				base: '0xc12F6Ce3f6f605Ca054817290e58a20D91DeF445',
 				symbol: 'ATOM',
-				baseExponents: 18,
+				baseExponents: 6,
 				image:
 					'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
 				exponents: 6
