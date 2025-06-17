@@ -10,11 +10,11 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 		rpc: ['https://rpc.provider-sentry-01.ics-testnet.polypore.xyz'],
 		assets: {
 			[ASSET_ID_PROVIDER_ATOM]: {
-				tickerDisplay: 'OSMO',
-				tickerSystem: 'OSMO',
-				base: 'uosmo',
+				tickerDisplay: 'ATOM',
+				tickerSystem: 'ATOM',
+				base: 'uatom',
 				image:
-					'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg',
+					'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
 				exponents: 6
 			},
 			[ASSET_ID_RISE]: {

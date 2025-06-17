@@ -23,15 +23,17 @@ export type LedgerMetadata = {
 			txPage: string; // ${txHash}
 		};
 		ibcEureka?: {
-			ibcChain: string;
 			config: IBCEurekaConfig;
 		};
 	};
 };
 
 export interface IBCEurekaConfig {
+	ibcChain: string;
 	ics20TransferAddress: Hex;
 	ics26RouterAddress: Hex;
-	clientId: string;
+	relayFeeRecipient: Hex;
+	sourceClient: string;
+	destPort: string;
 	counterpartyClientId: string;
 }
