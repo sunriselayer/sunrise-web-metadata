@@ -31,5 +31,26 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 		chainId: 'provider',
 		srcChannel: 'channel-476',
 		dstChannel: 'channel-0'
+	},
+	neutrontestnet: {
+		name: 'Neutron Testnet',
+		image:
+			'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/ntrn.svg',
+		rpc: ['https://rpc-falcron.pion-1.ntrn.tech'],
+		assets: {
+			[ASSET_ID_PROVIDER_ATOM]: {
+				tickerDisplay: 'ATOM',
+				tickerSystem: 'ATOM',
+				base: 'ibc/D1283F23CC25C39F16BCFB2DFFA9997AE7A101B92810D0F9F0AA092F6FE332D0',
+				image:
+					'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
+				exponents: 6
+			}
+		},
+		addressType: AddressType.Cosmos,
+		prefix: 'neutron',
+		chainId: 'pion-1',
+		srcChannel: 'channel-0',
+		dstChannel: 'channel-0'
 	}
 };

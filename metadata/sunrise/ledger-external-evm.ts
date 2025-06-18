@@ -51,9 +51,9 @@ export const sunriseExternalEvmMetadata: LedgerMetadata = {
 		ibcEureka: {
 			config: {
 				ibcChain: 'cosmoshub',
-				ics20TransferAddress: '0xa348CfE719B63151F228e3C30EB424BA5a983012',
-				ics26RouterAddress: '0x3aF134307D5Ee90faa2ba9Cdba14ba66414CF1A7',
-				relayFeeRecipient: '0x0000000000000000000000000000000000000000',
+				relayFeeRecipientAddress: '0x0000000000000000000000000000000000000000',
+				ibcRelayAddress: '',
+				ibcTransferContractAddress: '',
 				sourceClient: 'cosmoshub-0', // For Cosmos Hub mainnet connection
 				destPort: 'transfer',
 				counterpartyClientId: '08-wasm-1369'
