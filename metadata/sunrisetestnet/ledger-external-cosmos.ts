@@ -29,8 +29,8 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 		addressType: AddressType.Cosmos,
 		prefix: 'cosmos',
 		chainId: 'provider',
-		srcChannel: 'channel-476',
-		dstChannel: 'channel-0'
+		srcChannel: 'channel-0',
+		dstChannel: 'channel-476'
 	},
 	neutrontestnet: {
 		name: 'Neutron Testnet',
