@@ -4,6 +4,7 @@ import type { AssetMetadata } from '../../types/asset';
 
 export const ASSET_ID_RISE = 'urise';
 export const ASSET_ID_VRISE = 'uvrise';
+export const ASSET_ID_USDRISE = 'uusdrise';
 export const ASSET_ID_PROVIDER_ATOM =
 	'ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2';
 
@@ -44,6 +45,13 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/vrise.svg',
 		exponents: 6
+	},
+	[ASSET_ID_USDRISE]: {
+		tickerDisplay: 'USDrise',
+		tickerSystem: 'USDrise',
+		image:
+			'https://raw.githubusercontent.com/sunriselayer/chain-registry/master/sunrise/images/usdrise.svg',
+		exponents: 6,
 	},
 	uatom: {
 		tickerDisplay: 'ATOM',

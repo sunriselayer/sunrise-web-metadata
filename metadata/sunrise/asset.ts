@@ -2,6 +2,7 @@ import type { AssetMetadata } from '../../types/asset';
 
 export const ASSET_ID_RISE = 'urise';
 export const ASSET_ID_VRISE = 'uvrise';
+export const ASSET_ID_USDRISE = 'uusdrise';
 
 export const sunriseAssetMetadata: AssetMetadata = {
 	[ASSET_ID_RISE]: {
@@ -16,6 +17,13 @@ export const sunriseAssetMetadata: AssetMetadata = {
 		tickerSystem: 'vRISE',
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/vrise.svg',
+		exponents: 6
+	},
+	[ASSET_ID_USDRISE]: {
+		tickerDisplay: 'USDrise',
+		tickerSystem: 'USDrise',
+		image:
+			'https://raw.githubusercontent.com/sunriselayer/chain-registry/master/sunrise/images/usdrise.svg',
 		exponents: 6
 	}
 };
