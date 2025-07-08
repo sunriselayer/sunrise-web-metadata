@@ -5,6 +5,7 @@ import type { AssetMetadata } from '../../types/asset';
 export const ASSET_ID_RISE = 'urise';
 export const ASSET_ID_VRISE = 'uvrise';
 export const ASSET_ID_USDRISE = 'uusdrise';
+export const ASSET_ID_USDN = 'uusdn'; // TODO: change to ibc/xxxxxxxxx;	
 export const ASSET_ID_PROVIDER_ATOM =
 	'ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2';
 
@@ -47,6 +48,13 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 				}
 			}
 		}
+	},
+	[ASSET_ID_USDN]: {
+		tickerDisplay: 'USDN',
+		tickerSystem: 'USDN',
+		image:
+			'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDN.svg',
+		exponents: 6
 	},
 	uatom: {
 		tickerDisplay: 'ATOM',
