@@ -63,6 +63,10 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
 		exponents: 6,
+		bridge: {
+			id: 'ibc',
+			originLedgerId: 'nobletestnet'
+		}
 	},
 	uatom: {
 		tickerDisplay: 'ATOM',
