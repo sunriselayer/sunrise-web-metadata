@@ -8,6 +8,7 @@ export const ASSET_ID_USDRISE = 'uusdrise';
 export const ASSET_ID_USDN = 'uusdn'; // TODO: change to ibc/xxxxxxxxx;	
 export const ASSET_ID_PROVIDER_ATOM =
 	'ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2';
+export const ASSET_ID_NOBLE_USDC = "ibc/65D0BEC6DAD96C7F5043D1E54E54B6BB5D5B3AEC3FF6CEBB75B9E059F3580EA3";
 
 export const sunriseTestAssetMetadata: AssetMetadata = {
 	[ASSET_ID_RISE]: {
@@ -55,6 +56,13 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDN.svg',
 		exponents: 6
+	},
+	[ASSET_ID_NOBLE_USDC]: {
+		tickerDisplay: 'USDC',
+		tickerSystem: 'USDC',
+		image:
+			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+		exponents: 6,
 	},
 	uatom: {
 		tickerDisplay: 'ATOM',
