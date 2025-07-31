@@ -1,6 +1,6 @@
 import type { LedgerMetadata } from '../../types/ledger';
 import { AddressType } from '../../types/wallet';
-import { ASSET_ID_NOBLE_USDC, ASSET_ID_PROVIDER_ATOM } from './asset';
+import { ASSET_ID_NOBLE_USDC, ASSET_ID_PROVIDER_ATOM, ASSET_ID_USDN } from './asset';
 
 export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 	cosmosicsprovidertestnet: {
@@ -29,8 +29,8 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 		addressType: AddressType.Cosmos,
 		prefix: 'cosmos',
 		chainId: 'provider',
-		srcChannel: 'channel-0',
-		dstChannel: 'channel-489'
+		srcChannel: 'channel-1',
+		dstChannel: 'channel-493'
 	},
 	nobletestnet: {
 		name: 'Noble Testnet',
@@ -46,6 +46,14 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 					'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
 				exponents: 6
 			},
+			[ASSET_ID_USDN]: {
+				tickerDisplay: 'USDN',
+				tickerSystem: 'USDN',
+				base: 'uusdn',
+				image:
+					'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDN.svg',
+				exponents: 6
+			},
 			// [ASSET_ID_RISE]: {
 			// 	tickerDisplay: 'RISE',
 			// 	tickerSystem: 'RISE',
@@ -58,8 +66,8 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 		addressType: AddressType.Cosmos,
 		prefix: 'noble',
 		chainId: 'grand-1',
-		srcChannel: 'channel-1',
-		dstChannel: 'channel-532'
+		srcChannel: 'channel-0',
+		dstChannel: 'channel-554'
 	},
 	neutrontestnet: {
 		name: 'Neutron Testnet',
