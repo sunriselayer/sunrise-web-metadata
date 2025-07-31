@@ -1,7 +1,14 @@
+import { create } from '@bufbuild/protobuf';
+import { RoutePoolSchema } from '@sunriselayer/client/types/swap';
 import type { AssetMetadata } from '../../types/asset';
 
 export const ASSET_ID_RISE = 'urise';
 export const ASSET_ID_VRISE = 'uvrise';
+export const ASSET_ID_USDRISE = 'uusdrise';
+export const ASSET_ID_USDN = 'ibc/A7AD825A4B48DDA0138D118655E60100D22A4D690C45B95221520B58C9A64B63'; // TODO: change to ibc/xxxxxxxxx;	
+export const ASSET_ID_PROVIDER_ATOM =
+	'ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9';
+export const ASSET_ID_NOBLE_USDC = "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5";
 
 export const sunriseTestAssetMetadata: AssetMetadata = {
 	[ASSET_ID_RISE]: {
@@ -11,17 +18,12 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/sunrise.svg',
 		exponents: 6,
 		swap: {
-			'ibc/uatom': {
+			[ASSET_ID_USDRISE]: {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 0 }
-			},
-			'ibc/uusdc': {
-				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 1 }
-			},
-			'ibc/uusdt': {
-				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 2 }
+				strategy: {
+					case: 'pool',
+					value: create(RoutePoolSchema, { poolId: BigInt(1) })
+				}
 			}
 		}
 	},
@@ -32,45 +34,30 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/vrise.svg',
 		exponents: 6
 	},
-	'ibc/uatom': {
-		tickerDisplay: 'ATOM',
-		tickerSystem: 'ATOM',
+	[ASSET_ID_USDRISE]: {
+		tickerDisplay: 'USDrise',
+		tickerSystem: 'USDrise',
 		image:
-			'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
+			'https://raw.githubusercontent.com/sunriselayer/chain-registry/master/sunrise/images/usdrise.svg',
 		exponents: 6,
-		bridge: {
-			id: 'ibc',
-			originLedgerId: 'cosmos_hub'
-		},
 		swap: {
 			[ASSET_ID_RISE]: {
 				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 0 }
-			},
-			'ibc/stuatom': {
-				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 6 }
+				strategy: {
+					case: 'pool',
+					value: create(RoutePoolSchema, { poolId: BigInt(1) })
+				}
 			}
 		}
 	},
-	'ibc/stuatom': {
-		tickerDisplay: 'stATOM',
-		tickerSystem: 'stATOM',
+	[ASSET_ID_USDN]: {
+		tickerDisplay: 'USDN',
+		tickerSystem: 'USDN',
 		image:
-			'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.svg',
-		exponents: 6,
-		bridge: {
-			id: 'ibc',
-			originLedgerId: 'stride'
-		},
-		swap: {
-			'ibc/uatom': {
-				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 6 }
-			}
-		}
+			'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDN.svg',
+		exponents: 6
 	},
-	'ibc/uusdc': {
+	[ASSET_ID_NOBLE_USDC]: {
 		tickerDisplay: 'USDC',
 		tickerSystem: 'USDC',
 		image:
@@ -78,103 +65,18 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		exponents: 6,
 		bridge: {
 			id: 'ibc',
-			originLedgerId: 'noble'
-		},
-		swap: {
-			[ASSET_ID_RISE]: {
-				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 1 }
-			},
-			'ibc/uusdt': {
-				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 3 }
-			},
-			'ibc/ushib': {
-				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 4 }
-			},
-			'ibc/uibgt': {
-				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 5 }
-			}
+			originLedgerId: 'nobletestnet'
 		}
 	},
-	'ibc/uusdt': {
-		tickerDisplay: 'USDT',
-		tickerSystem: 'USDT',
+	[ASSET_ID_PROVIDER_ATOM]: {
+		tickerDisplay: 'ATOM',
+		tickerSystem: 'ATOM',
 		image:
-			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg',
+			'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
 		exponents: 6,
 		bridge: {
 			id: 'ibc',
-			originLedgerId: 'kava'
-		},
-		swap: {
-			[ASSET_ID_RISE]: {
-				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 2 }
-			},
-			'ibc/uusdc': {
-				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 3 }
-			}
-		}
-	},
-	'ibc/uibgt': {
-		tickerDisplay: 'iBGT',
-		tickerSystem: 'iBGT',
-		image: 'https://miro.medium.com/v2/resize:fill:176:176/1*yGFxA-Kv4_N5Z9TLfLNIRg.png',
-		exponents: 6,
-		swap: {
-			'ibc/uusdc': {
-				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 5 }
-			}
-		}
-	},
-	'ibc/uweth': {
-		tickerDisplay: 'wETH.axl',
-		tickerSystem: 'ETH',
-		image:
-			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/weth.svg',
-		exponents: 6,
-		bridge: {
-			id: 'ibc_axelar',
-			originLedgerId: 'ethereum'
-		}
-	},
-	'ibc/uoas': {
-		tickerDisplay: 'OAS.lcp',
-		tickerSystem: 'OAS',
-		image: 'https://s2.coinmarketcap.com/static/img/coins/64x64/22265.png',
-		exponents: 6
-	},
-	'ibc/ushib': {
-		tickerDisplay: 'SHIB.axl',
-		tickerSystem: 'SHIB',
-		image:
-			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/shib.svg',
-		exponents: 6,
-		bridge: {
-			id: 'ibc_axelar',
-			originLedgerId: 'ethereum'
-		},
-		swap: {
-			'ibc/uusdc': {
-				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				pool: { poolId: 4 }
-			}
-		}
-	},
-	'ibc/upepe': {
-		tickerDisplay: 'PEPE.axl',
-		tickerSystem: 'PEPE',
-		image:
-			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pepe.svg',
-		exponents: 6,
-		bridge: {
-			id: 'ibc_axelar',
-			originLedgerId: 'ethereum'
+			originLedgerId: 'cosmosicsprovidertestnet'
 		}
 	}
 };

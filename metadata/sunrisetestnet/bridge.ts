@@ -5,9 +5,4 @@ export const sunriseTestBridgeMetadata: BridgeMetadata = {
 		name: 'IBC',
 		image: ''
 	},
-	ibc_axelar: {
-		name: 'IBC - Axelar',
-		image:
-			'https://raw.githubusercontent.com/cosmos/chain-registry/master/axelar/images/axelar-chain-logo.svg'
-	}
 };
