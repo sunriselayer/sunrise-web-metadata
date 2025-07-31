@@ -1,3 +1,4 @@
+import type { Hex } from 'viem';
 import type { AssetMetadata } from './asset';
 import { AddressType } from './wallet';
 
@@ -12,15 +13,6 @@ export type LedgerMetadata = {
 		chainId?: string;
 		srcChannel?: string;
 		dstChannel?: string;
-		axelarGmp?: {
-			evmChainName: string;
-			evmContractAddress: string;
-			evmFunctionName: string;
-			ibcChainName: string;
-			ibcSrcChannelId: string;
-			ibcDstChannelId: string;
-			ibcContractAddress: string;
-		};
 		nativeCurrency?: {
 			name: string;
 			symbol: string;
@@ -30,5 +22,18 @@ export type LedgerMetadata = {
 			url: string;
 			txPage: string; // ${txHash}
 		};
+		ibcEureka?: {
+			config: IBCEurekaConfig;
+		};
 	};
 };
+
+export interface IBCEurekaConfig {
+	ibcChain: string;
+	relayFeeRecipientAddress: Hex;
+	ibcRelayAddress: string;
+	ibcTransferContractAddress: string;
+	sourceClient: string;
+	destPort: string;
+	counterpartyClientId: string;
+}

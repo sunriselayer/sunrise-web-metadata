@@ -43,11 +43,26 @@ export const sunriseExternalEvmMetadata: LedgerMetadata = {
 				exponents: 18
 			}
 		},
-		addressType: AddressType.Evm
+		addressType: AddressType.Evm,
+		explorer: {
+			url: 'https://etherscan.io/',
+			txPage: 'https://etherscan.io/tx/${txHash}'
+		},
+		ibcEureka: {
+			config: {
+				ibcChain: 'cosmoshub',
+				relayFeeRecipientAddress: '0x0000000000000000000000000000000000000000',
+				ibcRelayAddress: '',
+				ibcTransferContractAddress: '',
+				sourceClient: 'cosmoshub-0', // For Cosmos Hub mainnet connection
+				destPort: 'transfer',
+				counterpartyClientId: '08-wasm-1369'
+			}
+		}
 	},
 	optimism: {
 		name: 'Optimism',
-		chainId: 'Oxa',
+		chainId: '0xa',
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/optimism/images/op.svg',
 		rpc: ['https://optimism-mainnet.infura.io/v3/c2b70c37395240a4b7cb6303ebb55b81'],

@@ -1,15 +1,4 @@
-export interface RoutePool {
-	poolId: number;
-}
-
-export interface RouteSeries {
-	routes: Route[];
-}
-
-export interface RouteParallel {
-	routes: Route[];
-	weights: string[];
-}
+import type { RouteParallel, RoutePool, RouteSeries } from '@sunriselayer/client/types/swap';
 
 export interface Route {
 	denomIn: string;
@@ -40,8 +29,9 @@ export type AssetMetadata = {
 export type SwapMetadata = {
 	[denomOut: string]: {
 		interfaceProviderAddr: string;
-		pool?: RoutePool | undefined;
-		series?: RouteSeries | undefined;
-		parallel?: RouteParallel | undefined;
+		strategy:
+			| { value: RoutePool; case: 'pool' }
+			| { value: RouteSeries; case: 'series' }
+			| { value: RouteParallel; case: 'parallel' };
 	};
 };

@@ -1,6 +1,6 @@
 import type { LedgerMetadata } from '../../types/ledger';
 import { AddressType } from '../../types/wallet';
-import { ASSET_ID_AUSDC_NEUTRON } from './asset';
+import { ASSET_ID_PROVIDER_ATOM } from './asset';
 
 export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 	ethereumsepolia: {
@@ -15,24 +15,14 @@ export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 			decimals: 18
 		},
 		assets: {
-			'ibc/94EB1E9A676004E74ECF47F8E4BF183F4017CE0630A4D1AC7C7D9EB9CD6A3D53': {
-				tickerDisplay: 'axlUSDC - Osmosis',
-				tickerSystem: 'aUSDC',
-				base: '0x254d06f33bDc5b8ee05b2ea472107E300226659A',
-				symbol: 'aUSDC',
+			[ASSET_ID_PROVIDER_ATOM]: {
+				tickerDisplay: 'ATOM',
+				tickerSystem: 'transfer/hub-testnet-0/uatom',
+				base: '0xc12F6Ce3f6f605Ca054817290e58a20D91DeF445',
+				symbol: 'ATOM',
 				baseExponents: 6,
 				image:
-					'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
-				exponents: 6
-			},
-			[ASSET_ID_AUSDC_NEUTRON]: {
-				tickerDisplay: 'axlUSDC',
-				tickerSystem: 'aUSDC',
-				base: '0x254d06f33bDc5b8ee05b2ea472107E300226659A',
-				symbol: 'aUSDC',
-				baseExponents: 6,
-				image:
-					'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+					'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
 				exponents: 6
 			}
 		},
@@ -41,35 +31,17 @@ export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 			url: 'https://sepolia.etherscan.io/',
 			txPage: 'https://sepolia.etherscan.io/tx/${txHash}'
 		},
-		axelarGmp: {
-			evmChainName: 'ethereum-sepolia',
-			evmContractAddress: '0x8ef2c2b9825a52c44bff05b4dd7b72899ccbd4e4',
-			evmFunctionName: 'sendToSunrise',
-			ibcChainName: 'neutron',
-			ibcSrcChannelId: 'channel-1097',
-			ibcDstChannelId: 'channel-1',
-			ibcContractAddress: 'neutron1s2gtqhnj9d6q5wjr44ll6uyd3xwn9a7fcn8t53yewjtq04ru52fsgupa3j'
+		ibcEureka: {
+			config: {
+				ibcChain: 'cosmosicsprovidertestnet',
+				relayFeeRecipientAddress: '0x33C4DaD158F1E2cCF97bF17d1574d5b7b9f43002',
+				ibcRelayAddress: 'cosmos1nsuqsk6kh58ulczatwev87ttq2z6r3pusulg9r24mfj2fvtzd4uq5d9fg9',
+				ibcTransferContractAddress:
+					'cosmos1uq4ztnt3lrtwx0ryjtvy66ncxd2q92fdg78mgxcr76mm2582xkwsqwrjr4',
+				sourceClient: 'hub-testnet-0', // For Cosmos Hub testnet connection
+				destPort: 'transfer',
+				counterpartyClientId: '08-wasm-262'
+			}
 		}
 	}
-	// oasystestnet: {
-	// 	name: 'Oasys Testnet',
-	// 	chainId: '0x249c',
-	// 	image: 'https://s2.coinmarketcap.com/static/img/coins/64x64/22265.png',
-	// 	rpc: ['https://rpc.testnet.oasys.games/'],
-	// 	nativeCurrency: {
-	// 		name: 'OAS',
-	// 		symbol: 'OAS',
-	// 		decimals: 18
-	// 	},
-	// 	assets: {
-	// 		oas: {
-	// 			// todo change to ibc denom
-	// 			tickerDisplay: 'OAS',
-	// 			tickerSystem: 'OAS',
-	// 			image: 'https://s2.coinmarketcap.com/static/img/coins/64x64/22265.png',
-	// 			exponents: 6
-	// 		}
-	// 	},
-	// 	addressType: AddressType.Evm
-	// }
 };
