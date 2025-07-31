@@ -68,37 +68,6 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 			originLedgerId: 'nobletestnet'
 		}
 	},
-	uatom: {
-		tickerDisplay: 'ATOM',
-		tickerSystem: 'ATOM',
-		image:
-			'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
-		exponents: 6,
-		bridge: {
-			id: 'ibc',
-			originLedgerId: 'cosmoshub'
-		},
-		swap: {
-			[ASSET_ID_RISE]: {
-				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				strategy: {
-					case: 'pool',
-					value: create(RoutePoolSchema, { poolId: BigInt(1) })
-				}
-			}
-		}
-	},
-	stuatom: {
-		tickerDisplay: 'stATOM',
-		tickerSystem: 'stATOM',
-		image:
-			'https://raw.githubusercontent.com/cosmos/chain-registry/master/stride/images/statom.svg',
-		exponents: 6,
-		bridge: {
-			id: 'ibc',
-			originLedgerId: 'stride'
-		}
-	},
 	[ASSET_ID_PROVIDER_ATOM]: {
 		tickerDisplay: 'ATOM',
 		tickerSystem: 'ATOM',
@@ -108,46 +77,6 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		bridge: {
 			id: 'ibc',
 			originLedgerId: 'cosmosicsprovidertestnet'
-		}
-	},
-	uusdc: {
-		tickerDisplay: 'USDC',
-		tickerSystem: 'USDC',
-		image:
-			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
-		exponents: 6,
-		bridge: {
-			id: 'ibc',
-			originLedgerId: 'noble'
-		},
-		swap: {
-			[ASSET_ID_RISE]: {
-				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				strategy: {
-					case: 'pool',
-					value: create(RoutePoolSchema, { poolId: BigInt(2) })
-				}
-			}
-		}
-	},
-	uusdt: {
-		tickerDisplay: 'USDT',
-		tickerSystem: 'USDT',
-		image:
-			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg',
-		exponents: 6,
-		bridge: {
-			id: 'ibc',
-			originLedgerId: 'kava'
-		},
-		swap: {
-			[ASSET_ID_RISE]: {
-				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				strategy: {
-					case: 'pool',
-					value: create(RoutePoolSchema, { poolId: BigInt(3) })
-				}
-			}
 		}
 	}
 };
