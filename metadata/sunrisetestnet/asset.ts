@@ -17,15 +17,6 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/sunrise.svg',
 		exponents: 6,
-		swap: {
-			[ASSET_ID_USDRISE]: {
-				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
-				strategy: {
-					case: 'pool',
-					value: create(RoutePoolSchema, { poolId: BigInt(1) })
-				}
-			}
-		}
 	},
 	[ASSET_ID_VRISE]: {
 		tickerDisplay: 'vRISE',
@@ -41,11 +32,18 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 			'https://raw.githubusercontent.com/sunriselayer/chain-registry/master/sunrise/images/usdrise.svg',
 		exponents: 6,
 		swap: {
-			[ASSET_ID_RISE]: {
-				interfaceProviderAddr: 'sunrise155u042u8wk3al32h3vzxu989jj76k4zcc6d03n',
+			[ASSET_ID_USDN]: {
+				interfaceProviderAddr: '',
 				strategy: {
 					case: 'pool',
 					value: create(RoutePoolSchema, { poolId: BigInt(1) })
+				}
+			},
+			[ASSET_ID_NOBLE_USDC]: {
+				interfaceProviderAddr: '',
+				strategy: {
+					case: 'pool',
+					value: create(RoutePoolSchema, { poolId: BigInt(2) })
 				}
 			}
 		}
@@ -59,6 +57,15 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		bridge: {
 			id: 'ibc',
 			originLedgerId: 'nobletestnet'
+		},
+		swap: {
+			[ASSET_ID_USDRISE]: {
+				interfaceProviderAddr: '',
+				strategy: {
+					case: 'pool',
+					value: create(RoutePoolSchema, { poolId: BigInt(1) })
+				}
+			}
 		}
 	},
 	[ASSET_ID_NOBLE_USDC]: {
@@ -70,6 +77,15 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		bridge: {
 			id: 'ibc',
 			originLedgerId: 'nobletestnet'
+		},
+		swap: {
+			[ASSET_ID_USDRISE]: {
+				interfaceProviderAddr: '',
+				strategy: {
+					case: 'pool',
+					value: create(RoutePoolSchema, { poolId: BigInt(2) })
+				}
+			}
 		}
 	},
 	[ASSET_ID_PROVIDER_ATOM]: {

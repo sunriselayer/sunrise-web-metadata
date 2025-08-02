@@ -1,4 +1,6 @@
+import { RoutePoolSchema } from '@sunriselayer/client/types/swap';
 import type { AssetMetadata } from '../../types/asset';
+import { create } from '@bufbuild/protobuf';
 
 export const ASSET_ID_RISE = 'urise';
 export const ASSET_ID_VRISE = 'uvrise';
@@ -26,7 +28,23 @@ export const sunriseAssetMetadata: AssetMetadata = {
 		tickerSystem: 'USDrise',
 		image:
 			'https://raw.githubusercontent.com/sunriselayer/chain-registry/master/sunrise/images/usdrise.svg',
-		exponents: 6
+		exponents: 6,
+		swap: {
+			[ASSET_ID_USDN]: {
+				interfaceProviderAddr: '',
+				strategy: {
+					case: 'pool',
+					value: create(RoutePoolSchema, { poolId: BigInt(1) })
+				}
+			},
+			[ASSET_ID_NOBLE_USDC]: {
+				interfaceProviderAddr: '',
+				strategy: {
+					case: 'pool',
+					value: create(RoutePoolSchema, { poolId: BigInt(2) })
+				}
+			}
+		}
 	},
 	[ASSET_ID_USDN]: {
 		tickerDisplay: 'USDN',
@@ -37,6 +55,15 @@ export const sunriseAssetMetadata: AssetMetadata = {
 		bridge: {
 			id: 'ibc',
 			originLedgerId: 'noble'
+		},
+		swap: {
+			[ASSET_ID_USDRISE]: {
+				interfaceProviderAddr: '',
+				strategy: {
+					case: 'pool',
+					value: create(RoutePoolSchema, { poolId: BigInt(1) })
+				}
+			}
 		}
 	},
 	[ASSET_ID_NOBLE_USDC]: {
@@ -48,6 +75,15 @@ export const sunriseAssetMetadata: AssetMetadata = {
 		bridge: {
 			id: 'ibc',
 			originLedgerId: 'noble'
+		},
+		swap: {
+			[ASSET_ID_USDRISE]: {
+				interfaceProviderAddr: '',
+				strategy: {
+					case: 'pool',
+					value: create(RoutePoolSchema, { poolId: BigInt(2) })
+				}
+			}
 		}
 	}
 };
