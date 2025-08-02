@@ -55,7 +55,11 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		tickerSystem: 'USDN',
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDN.svg',
-		exponents: 6
+		exponents: 6,
+		bridge: {
+			id: 'ibc',
+			originLedgerId: 'nobletestnet'
+		}
 	},
 	[ASSET_ID_NOBLE_USDC]: {
 		tickerDisplay: 'USDC',

@@ -4,6 +4,7 @@ export const ASSET_ID_RISE = 'urise';
 export const ASSET_ID_VRISE = 'uvrise';
 export const ASSET_ID_USDRISE = 'uusdrise';
 export const ASSET_ID_USDN = 'uusdn'; // TODO: change to ibc/xxxxxxxxx;
+export const ASSET_ID_NOBLE_USDC = "uusdc"
 
 export const sunriseAssetMetadata: AssetMetadata = {
 	[ASSET_ID_RISE]: {
@@ -32,6 +33,21 @@ export const sunriseAssetMetadata: AssetMetadata = {
 		tickerSystem: 'USDN',
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDN.svg',
-		exponents: 6
+		exponents: 6,
+		bridge: {
+			id: 'ibc',
+			originLedgerId: 'noble'
+		}
+	},
+	[ASSET_ID_NOBLE_USDC]: {
+		tickerDisplay: 'USDC',
+		tickerSystem: 'USDC',
+		image:
+			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+		exponents: 6,
+		bridge: {
+			id: 'ibc',
+			originLedgerId: 'noble'
+		}
 	}
 };

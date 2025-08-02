@@ -1,5 +1,6 @@
 import type { LedgerMetadata } from '../../types/ledger';
 import { AddressType } from '../../types/wallet';
+import { ASSET_ID_NOBLE_USDC, ASSET_ID_USDN } from './asset';
 
 export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 	cosmoshub: {
@@ -41,11 +42,18 @@ export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 		image: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.svg',
 		rpc: ['https://noble-rpc.polkachu.com'],
 		assets: {
-			uusdc: {
+			[ASSET_ID_NOBLE_USDC]: {
 				tickerDisplay: 'USDC',
 				tickerSystem: 'USDC',
 				image:
 					'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg',
+				exponents: 6
+			},
+			[ASSET_ID_USDN]: {
+				tickerDisplay: 'USDN',
+				tickerSystem: 'USDN',
+				image:
+					'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDN.svg',
 				exponents: 6
 			}
 		},
@@ -56,37 +64,7 @@ export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 		name: 'Osmosis',
 		image: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg',
 		rpc: ['https://rpc.osmosis.zone/'],
-		assets: {
-			uosmo: {
-				tickerDisplay: 'OSMO',
-				tickerSystem: 'OSMO',
-				image:
-					'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg',
-				exponents: 6
-			},
-			'ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2': {
-				tickerDisplay: 'ATOM',
-				tickerSystem: 'ATOM',
-				image:
-					'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
-				exponents: 6,
-				bridge: {
-					id: 'ibc',
-					originLedgerId: 'cosmoshub'
-				}
-			},
-			'ibc/498A0751C798A0D9A389AA3691123DADA57DAA4FE165D5C75894505B876BA6E4': {
-				tickerDisplay: 'USDC',
-				tickerSystem: 'USDC',
-				image:
-					'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg',
-				exponents: 6,
-				bridge: {
-					id: 'ibc',
-					originLedgerId: 'noble'
-				}
-			}
-		},
+		assets: {},
 		addressType: AddressType.Cosmos,
 		prefix: 'osmo'
 	},
