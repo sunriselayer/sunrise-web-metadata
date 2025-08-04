@@ -29,13 +29,13 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 		addressType: AddressType.Cosmos,
 		prefix: 'cosmos',
 		chainId: 'provider',
-		srcChannel: 'channel-1',
-		dstChannel: 'channel-493'
+		srcChannel: 'channel-493',
+		dstChannel: 'channel-1'
 	},
 	nobletestnet: {
 		name: 'Noble Testnet',
 		image:
-			'https://framerusercontent.com/images/ZOCnYDbYG5dd6ClmjLXdrS9nJI.svg',
+			'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/stake.svg',
 		rpc: ['https://noble-testnet-rpc.polkachu.com'],
 		assets: {
 			[ASSET_ID_NOBLE_USDC]: {
@@ -66,8 +66,8 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 		addressType: AddressType.Cosmos,
 		prefix: 'noble',
 		chainId: 'grand-1',
-		srcChannel: 'channel-0',
-		dstChannel: 'channel-554'
+		srcChannel: 'channel-554',
+		dstChannel: 'channel-0'
 	},
 	neutrontestnet: {
 		name: 'Neutron Testnet',
