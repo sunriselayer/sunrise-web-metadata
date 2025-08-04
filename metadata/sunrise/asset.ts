@@ -6,7 +6,7 @@ export const ASSET_ID_RISE = 'urise';
 export const ASSET_ID_VRISE = 'uvrise';
 export const ASSET_ID_USDRISE = 'uusdrise';
 export const ASSET_ID_USDN = 'uusdn'; // TODO: change to ibc/xxxxxxxxx;
-export const ASSET_ID_NOBLE_USDC = "uusdc"
+export const ASSET_ID_NOBLE_USDC = "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5"
 export const ASSET_ID_PROVIDER_ATOM = "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9"
 
 export const sunriseAssetMetadata: AssetMetadata = {
