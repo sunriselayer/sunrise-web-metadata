@@ -35,7 +35,7 @@ export const sunriseAssetMetadata: AssetMetadata = {
 				interfaceProviderAddr: '',
 				strategy: {
 					case: 'pool',
-					value: create(RoutePoolSchema, { poolId: BigInt(1) })
+					value: create(RoutePoolSchema, { poolId: BigInt(3) })
 				}
 			},
 			[ASSET_ID_NOBLE_USDC]: {
@@ -62,7 +62,7 @@ export const sunriseAssetMetadata: AssetMetadata = {
 				interfaceProviderAddr: '',
 				strategy: {
 					case: 'pool',
-					value: create(RoutePoolSchema, { poolId: BigInt(1) })
+					value: create(RoutePoolSchema, { poolId: BigInt(3) })
 				}
 			}
 		}
