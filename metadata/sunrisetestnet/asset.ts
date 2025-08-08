@@ -17,13 +17,17 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/sunrise.svg',
 		exponents: 6,
+		base: ASSET_ID_RISE,
+		baseExponents: 6
 	},
 	[ASSET_ID_VRISE]: {
 		tickerDisplay: 'vRISE',
 		tickerSystem: 'vRISE',
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/vrise.svg',
-		exponents: 6
+		exponents: 6,
+		base: ASSET_ID_VRISE,
+		baseExponents: 6
 	},
 	[ASSET_ID_USDRISE]: {
 		tickerDisplay: 'USDrise',
@@ -31,6 +35,8 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		image:
 			'https://raw.githubusercontent.com/sunriselayer/chain-registry/master/sunrise/images/usdrise.svg',
 		exponents: 6,
+		base: ASSET_ID_USDRISE,
+		baseExponents: 6,
 		swap: {
 			[ASSET_ID_USDN]: {
 				interfaceProviderAddr: '',
@@ -54,6 +60,8 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDN.svg',
 		exponents: 6,
+		base: "uusdn",
+		baseExponents: 6,
 		bridge: {
 			id: 'ibc',
 			originLedgerId: 'nobletestnet'
@@ -74,6 +82,8 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
 		exponents: 6,
+		base: "uusdc",
+		baseExponents: 6,
 		bridge: {
 			id: 'ibc',
 			originLedgerId: 'nobletestnet'
@@ -94,6 +104,8 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
 		exponents: 6,
+		base: "uatom",
+		baseExponents: 6,
 		bridge: {
 			id: 'ibc',
 			originLedgerId: 'cosmosicsprovidertestnet'

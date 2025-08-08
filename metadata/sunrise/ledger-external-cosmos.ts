@@ -14,7 +14,9 @@ export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 				tickerSystem: 'ATOM',
 				image:
 					'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
-				exponents: 6
+				exponents: 6,
+				base: "uatom",
+				baseExponents: 6
 			}
 		},
 		addressType: AddressType.Cosmos,
@@ -50,14 +52,18 @@ export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 				tickerSystem: 'USDC',
 				image:
 					'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg',
-				exponents: 6
+				exponents: 6,
+				base: "uusdc",
+				baseExponents: 6
 			},
 			[ASSET_ID_USDN]: {
 				tickerDisplay: 'USDN',
 				tickerSystem: 'USDN',
 				image:
 					'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDN.svg',
-				exponents: 6
+				exponents: 6,
+				base: "uusdn",
+				baseExponents: 6
 			}
 		},
 		addressType: AddressType.Cosmos,

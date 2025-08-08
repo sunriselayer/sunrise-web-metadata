@@ -15,7 +15,8 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 				base: 'uatom',
 				image:
 					'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
-				exponents: 6
+				exponents: 6,
+				baseExponents: 6
 			},
 			// [ASSET_ID_RISE]: {
 			// 	tickerDisplay: 'RISE',
@@ -44,7 +45,8 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 				base: 'uusdc',
 				image:
 					'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
-				exponents: 6
+				exponents: 6,
+				baseExponents: 6
 			},
 			[ASSET_ID_USDN]: {
 				tickerDisplay: 'USDN',
@@ -52,7 +54,8 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 				base: 'uusdn',
 				image:
 					'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDN.svg',
-				exponents: 6
+				exponents: 6,
+				baseExponents: 6
 			},
 			// [ASSET_ID_RISE]: {
 			// 	tickerDisplay: 'RISE',
