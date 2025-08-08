@@ -1,6 +1,6 @@
 import type { LedgerMetadata } from '../../types/ledger';
 import { AddressType } from '../../types/wallet';
-import { ASSET_ID_PROVIDER_ATOM } from './asset';
+import { ASSET_ID_ATOM } from './asset';
 
 export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 	ethereumsepolia: {
@@ -15,7 +15,7 @@ export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 			decimals: 18
 		},
 		assets: {
-			[ASSET_ID_PROVIDER_ATOM]: {
+			[ASSET_ID_ATOM]: {
 				tickerDisplay: 'ATOM',
 				tickerSystem: 'transfer/hub-testnet-0/uatom',
 				base: '0xc12F6Ce3f6f605Ca054817290e58a20D91DeF445',

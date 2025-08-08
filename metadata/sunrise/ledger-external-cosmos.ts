@@ -1,6 +1,6 @@
 import type { LedgerMetadata } from '../../types/ledger';
 import { AddressType } from '../../types/wallet';
-import { ASSET_ID_NOBLE_USDC, ASSET_ID_PROVIDER_ATOM, ASSET_ID_USDN } from './asset';
+import { ASSET_ID_NOBLE_USDC, ASSET_ID_ATOM, ASSET_ID_USDN } from './asset';
 
 export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 	cosmoshub: {
@@ -9,7 +9,7 @@ export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
 		rpc: ['https://rpc.cosmos.nodestake.top'],
 		assets: {
-			[ASSET_ID_PROVIDER_ATOM]: {
+			[ASSET_ID_ATOM]: {
 				tickerDisplay: 'ATOM',
 				tickerSystem: 'ATOM',
 				image:

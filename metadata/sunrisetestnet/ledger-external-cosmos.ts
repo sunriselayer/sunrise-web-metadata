@@ -1,6 +1,6 @@
 import type { LedgerMetadata } from '../../types/ledger';
 import { AddressType } from '../../types/wallet';
-import { ASSET_ID_NOBLE_USDC, ASSET_ID_PROVIDER_ATOM, ASSET_ID_USDN } from './asset';
+import { ASSET_ID_NOBLE_USDC, ASSET_ID_ATOM, ASSET_ID_USDN } from './asset';
 
 export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 	cosmosicsprovidertestnet: {
@@ -9,7 +9,7 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
 		rpc: ['https://rpc.provider-sentry-01.ics-testnet.polypore.xyz'],
 		assets: {
-			[ASSET_ID_PROVIDER_ATOM]: {
+			[ASSET_ID_ATOM]: {
 				tickerDisplay: 'ATOM',
 				tickerSystem: 'ATOM',
 				base: 'uatom',
@@ -75,7 +75,7 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/testnets/neutrontestnet/images/ntrn.svg',
 		rpc: ['https://rpc-falcron.pion-1.ntrn.tech'],
 		assets: {
-			[ASSET_ID_PROVIDER_ATOM]: {
+			[ASSET_ID_ATOM]: {
 				tickerDisplay: 'ATOM',
 				tickerSystem: 'ATOM',
 				base: 'ibc/D1283F23CC25C39F16BCFB2DFFA9997AE7A101B92810D0F9F0AA092F6FE332D0',
