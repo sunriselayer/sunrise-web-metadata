@@ -22,8 +22,8 @@ export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 		addressType: AddressType.Cosmos,
 		prefix: 'cosmos',
 		chainId: 'cosmoshub-4',
-		srcChannel: 'channel-1',
-		dstChannel: 'channel-1421'
+		sunriseChannel: 'channel-1',
+		cosmosChannel: 'channel-1421'
 	},
 	// celestia: {
 	// 	name: 'Celestia',
@@ -69,8 +69,8 @@ export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 		addressType: AddressType.Cosmos,
 		prefix: 'noble',
 		chainId: 'noble-1',
-		srcChannel: 'channel-0',
-		dstChannel: 'channel-168'
+		sunriseChannel: 'channel-0',
+		cosmosChannel: 'channel-168'
 	},
 	// osmosis: {
 	// 	name: 'Osmosis',

@@ -30,8 +30,8 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 		addressType: AddressType.Cosmos,
 		prefix: 'cosmos',
 		chainId: 'provider',
-		srcChannel: 'channel-493',
-		dstChannel: 'channel-1'
+		sunriseChannel: 'channel-1',
+		cosmosChannel: 'channel-493'
 	},
 	nobletestnet: {
 		name: 'Noble Testnet',
@@ -69,8 +69,8 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 		addressType: AddressType.Cosmos,
 		prefix: 'noble',
 		chainId: 'grand-1',
-		srcChannel: 'channel-554',
-		dstChannel: 'channel-0'
+		sunriseChannel: 'channel-0',
+		cosmosChannel: 'channel-554'
 	},
 	neutrontestnet: {
 		name: 'Neutron Testnet',
@@ -90,7 +90,7 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 		addressType: AddressType.Cosmos,
 		prefix: 'neutron',
 		chainId: 'pion-1',
-		srcChannel: 'channel-2',
-		dstChannel: 'channel-1874'
+		sunriseChannel: 'channel-2',
+		cosmosChannel: 'channel-1874'
 	},
 };

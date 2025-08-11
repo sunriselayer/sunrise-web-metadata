@@ -11,8 +11,8 @@ export type LedgerMetadata = {
 		addressType: AddressType;
 		prefix?: string;
 		chainId?: string;
-		srcChannel?: string;
-		dstChannel?: string;
+		sunriseChannel?: string;
+		cosmosChannel?: string;
 		nativeCurrency?: {
 			name: string;
 			symbol: string;
