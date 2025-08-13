@@ -38,14 +38,14 @@ export const sunriseAssetMetadata: AssetMetadata = {
 		baseExponents: 6,
 		swap: {
 			[ASSET_ID_USDN]: {
-				interfaceProviderAddr: '',
+				interfaceProviderAddr: 'sunrise1xxgjt7yqkmn63m2d0nrf0vt5uuc2hr6l45xaa9',
 				strategy: {
 					case: 'pool',
 					value: create(RoutePoolSchema, { poolId: BigInt(3) })
 				}
 			},
 			[ASSET_ID_NOBLE_USDC]: {
-				interfaceProviderAddr: '',
+				interfaceProviderAddr: 'sunrise1xxgjt7yqkmn63m2d0nrf0vt5uuc2hr6l45xaa9',
 				strategy: {
 					case: 'pool',
 					value: create(RoutePoolSchema, { poolId: BigInt(2) })
@@ -67,7 +67,7 @@ export const sunriseAssetMetadata: AssetMetadata = {
 		},
 		swap: {
 			[ASSET_ID_USDRISE]: {
-				interfaceProviderAddr: '',
+				interfaceProviderAddr: 'sunrise1xxgjt7yqkmn63m2d0nrf0vt5uuc2hr6l45xaa9',
 				strategy: {
 					case: 'pool',
 					value: create(RoutePoolSchema, { poolId: BigInt(3) })
@@ -89,7 +89,7 @@ export const sunriseAssetMetadata: AssetMetadata = {
 		},
 		swap: {
 			[ASSET_ID_USDRISE]: {
-				interfaceProviderAddr: '',
+				interfaceProviderAddr: 'sunrise1xxgjt7yqkmn63m2d0nrf0vt5uuc2hr6l45xaa9',
 				strategy: {
 					case: 'pool',
 					value: create(RoutePoolSchema, { poolId: BigInt(2) })
