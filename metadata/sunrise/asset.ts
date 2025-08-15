@@ -128,7 +128,7 @@ export const sunriseAssetMetadata: AssetMetadata = {
 		baseExponents: 6,
 		bridge: {
 			id: 'ibc',
-			originLedgerId: 'cosmosicsprovidertestnet'
+			originLedgerId: 'cosmoshub'
 		},
 		swap: {
 			[ASSET_ID_USDRISE]: {
