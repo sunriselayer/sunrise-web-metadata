@@ -1,6 +1,6 @@
 import type { LedgerMetadata } from '../../types/ledger';
 import { AddressType } from '../../types/wallet';
-import { ASSET_ID_NOBLE_USDC, ASSET_ID_ATOM, ASSET_ID_USDN } from './asset';
+import { ASSET_ID_NOBLE_USDC, ASSET_ID_ATOM, ASSET_ID_USDN, ASSET_ID_USDY } from './asset';
 
 export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 	cosmoshub: {
@@ -64,6 +64,13 @@ export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 				exponents: 6,
 				base: "uusdn",
 				baseExponents: 6
+			},
+			[ASSET_ID_USDY]: {
+				tickerDisplay: 'USDY',
+				tickerSystem: 'USDY',
+				image:
+					'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/usdy.svg',
+				exponents: 18,
 			}
 		},
 		addressType: AddressType.Cosmos,
