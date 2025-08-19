@@ -71,6 +71,8 @@ export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 				image:
 					'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/usdy.svg',
 				exponents: 18,
+				base: "ausdy",
+				baseExponents: 18
 			}
 		},
 		addressType: AddressType.Cosmos,
