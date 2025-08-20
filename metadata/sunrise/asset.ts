@@ -9,6 +9,7 @@ export const ASSET_ID_USDN = 'ibc/A7AD825A4B48DDA0138D118655E60100D22A4D690C45B9
 export const ASSET_ID_USDY = 'ibc/AAF322A78A0E34B76CDA05BA9AE96DC1521F9E103EC576AB9931116B2AB8C26B';
 export const ASSET_ID_NOBLE_USDC = "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5"
 export const ASSET_ID_ATOM = "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9"
+export const ASEET_ID_WBTC = "ibc/0E293A7622DC9A6439DB60E6D234B5AF446962E27CA3AB44D0590603DFF6968E"
 
 export const sunriseAssetMetadata: AssetMetadata = {
 	[ASSET_ID_RISE]: {
@@ -155,5 +156,18 @@ export const sunriseAssetMetadata: AssetMetadata = {
 				}
 			}
 		}
-	}
+	},
+	[ASEET_ID_WBTC]: {
+		tickerDisplay: 'WBTC',
+		tickerSystem: 'WBTC',
+		image:
+			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/wbtc.svg',
+		exponents: 8,
+		base: "ibc/D742E8566B0B8CC8F569D950051C09CF57988A88F0E45574BFB3079D41DE6462",
+		baseExponents: 8,
+		bridge: {
+			id: 'ibc',
+			originLedgerId: 'cosmoshub'
+		},
+	},
 };
