@@ -35,6 +35,7 @@ export const sunriseTestExternalEvmMetadata: LedgerMetadata = {
 			config: {
 				ibcChain: 'cosmosicsprovidertestnet',
 				relayFeeRecipientAddress: '0x33C4DaD158F1E2cCF97bF17d1574d5b7b9f43002',
+				eurekaFeeReceiver: 'cosmos1066ea436np9m6gf4q95q0nte2ctq84wuzahttk',
 				ibcRelayAddress: 'cosmos1nsuqsk6kh58ulczatwev87ttq2z6r3pusulg9r24mfj2fvtzd4uq5d9fg9',
 				ibcTransferContractAddress:
 					'cosmos1uq4ztnt3lrtwx0ryjtvy66ncxd2q92fdg78mgxcr76mm2582xkwsqwrjr4',
