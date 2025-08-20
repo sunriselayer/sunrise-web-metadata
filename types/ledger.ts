@@ -31,6 +31,7 @@ export type LedgerMetadata = {
 export interface IBCEurekaConfig {
 	ibcChain: string;
 	relayFeeRecipientAddress: Hex;
+	eurekaFeeReceiver: string;
 	ibcRelayAddress: string;
 	ibcTransferContractAddress: string;
 	sourceClient: string;
