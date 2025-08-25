@@ -66,6 +66,13 @@ export const sunriseAssetMetadata: AssetMetadata = {
 					case: 'pool',
 					value: create(RoutePoolSchema, { poolId: BigInt(5) })
 				}
+			},
+			[ASEET_ID_WBTC]: {
+				interfaceProviderAddr: 'sunrise1xxgjt7yqkmn63m2d0nrf0vt5uuc2hr6l45xaa9',
+				strategy: {
+					case: 'pool',
+					value: create(RoutePoolSchema, { poolId: BigInt(6) })
+				}
 			}
 		}
 	},
@@ -169,5 +176,14 @@ export const sunriseAssetMetadata: AssetMetadata = {
 			id: 'ibc',
 			originLedgerId: 'cosmoshub'
 		},
+		swap: {
+			[ASSET_ID_USDRISE]: {
+				interfaceProviderAddr: 'sunrise1xxgjt7yqkmn63m2d0nrf0vt5uuc2hr6l45xaa9',
+				strategy: {
+					case: 'pool',
+					value: create(RoutePoolSchema, { poolId: BigInt(6) })
+				}
+			}
+		}
 	},
 };
