@@ -10,6 +10,7 @@ export const ASSET_ID_USDY = 'ibc/AAF322A78A0E34B76CDA05BA9AE96DC1521F9E103EC576
 export const ASSET_ID_NOBLE_USDC = "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5"
 export const ASSET_ID_ATOM = "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9"
 export const ASEET_ID_WBTC = "ibc/0E293A7622DC9A6439DB60E6D234B5AF446962E27CA3AB44D0590603DFF6968E"
+export const ASSET_ID_WETH = "ibc/694A6B26A43A2FBECCFFEAC022DEACB39578E54207FDD32005CD976B57B98004"
 
 export const sunriseAssetMetadata: AssetMetadata = {
 	[ASSET_ID_RISE]: {
@@ -186,4 +187,13 @@ export const sunriseAssetMetadata: AssetMetadata = {
 			}
 		}
 	},
+	[ASSET_ID_WETH]: {
+		tickerDisplay: 'WETH',
+		tickerSystem: 'ETH',
+		image:
+			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/weth.svg',
+		exponents: 18,
+		base: "ibc/C0B53D3D23827AE38058BED0BDCD554229278AF530A8D265FCF6DFF7C4B2ADFF",
+		baseExponents: 18,
+	}
 };
