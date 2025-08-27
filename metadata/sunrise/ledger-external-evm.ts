@@ -2,64 +2,51 @@ import type { LedgerMetadata } from '../../types/ledger';
 import { AddressType } from '../../types/wallet';
 
 export const sunriseExternalEvmMetadata: LedgerMetadata = {
-	// ethereum: {
-	// 	name: 'Ethereum',
-	// 	chainId: '0x1',
-	// 	image:
-	// 		'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg',
-	// 	rpc: ['https://mainnet.infura.io/v3/c2b70c37395240a4b7cb6303ebb55b81'],
-	// 	nativeCurrency: {
-	// 		name: 'ETH',
-	// 		symbol: 'ETH',
-	// 		decimals: 18
-	// 	},
-	// 	assets: {
-	// 		eth: {
-	// 			tickerDisplay: 'ETH',
-	// 			tickerSystem: 'ETH',
-	// 			image:
-	// 				'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg',
-	// 			exponents: 18
-	// 		},
-	// 		'0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48': {
-	// 			tickerDisplay: 'USDC',
-	// 			tickerSystem: 'USDC',
-	// 			image:
-	// 				'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
-	// 			exponents: 6
-	// 		},
-	// 		'0x95aD61b0a150d79219dCF64E1E6Cc01f0B64C4cE': {
-	// 			tickerDisplay: 'SHIB',
-	// 			tickerSystem: 'SHIB',
-	// 			image:
-	// 				'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/shib.svg',
-	// 			exponents: 18
-	// 		},
-	// 		'0x6982508145454Ce325dDbE47a25d4ec3d2311933': {
-	// 			tickerDisplay: 'PEPE',
-	// 			tickerSystem: 'PEPE',
-	// 			image:
-	// 				'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/pepe.svg',
-	// 			exponents: 18
-	// 		}
-	// 	},
-	// 	addressType: AddressType.Evm,
-	// 	explorer: {
-	// 		url: 'https://etherscan.io/',
-	// 		txPage: 'https://etherscan.io/tx/${txHash}'
-	// 	},
-	// 	ibcEureka: {
-	// 		config: {
-	// 			ibcChain: 'cosmoshub',
-	// 			relayFeeRecipientAddress: '0x0000000000000000000000000000000000000000',
-	// 			ibcRelayAddress: '',
-	// 			ibcTransferContractAddress: '',
-	// 			sourceClient: 'cosmoshub-0', // For Cosmos Hub mainnet connection
-	// 			destPort: 'transfer',
-	// 			counterpartyClientId: '08-wasm-1369'
-	// 		}
-	// 	}
-	// },
+	ethereum: {
+		name: 'Ethereum',
+		chainId: '0x1',
+		image:
+			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg',
+		rpc: ['https://mainnet.infura.io/v3/c2b70c37395240a4b7cb6303ebb55b81'],
+		nativeCurrency: {
+			name: 'ETH',
+			symbol: 'ETH',
+			decimals: 18
+		},
+		assets: {
+			eth: {
+				tickerDisplay: 'ETH',
+				tickerSystem: 'ETH',
+				image:
+					'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/eth.svg',
+				exponents: 18
+			},
+			'0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48': {
+				tickerDisplay: 'USDC',
+				tickerSystem: 'USDC',
+				image:
+					'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
+				exponents: 6
+			},
+		},
+		addressType: AddressType.Evm,
+		explorer: {
+			url: 'https://etherscan.io/',
+			txPage: 'https://etherscan.io/tx/${txHash}'
+		},
+		ibcEureka: {
+			config: {
+				ibcChain: 'cosmoshub',
+				relayFeeRecipientAddress: '0x0000000000000000000000000000000000000000',
+				eurekaFeeReceiver: 'cosmos1066ea436np9m6gf4q95q0nte2ctq84wuzahttk',
+				ibcRelayAddress: 'cosmos1lqu9662kd4my6dww4gzp3730vew0gkwe0nl9ztjh0n5da0a8zc4swsvd22',
+				ibcTransferContractAddress: 'cosmos1clswlqlfm8gpn7n5wu0ypu0ugaj36urlhj7yz30hn7v7mkcm2tuqy9f8s5',
+				sourceClient: 'cosmoshub-0', // For Cosmos Hub mainnet connection
+				destPort: 'transfer',
+				counterpartyClientId: '08-wasm-1369'
+			}
+		}
+	},
 	// optimism: {
 	// 	name: 'Optimism',
 	// 	chainId: '0xa',
