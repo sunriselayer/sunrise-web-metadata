@@ -21,7 +21,16 @@ export const sunriseAssetMetadata: AssetMetadata = {
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/sunrise.svg',
 		exponents: 6,
 		base: ASSET_ID_RISE,
-		baseExponents: 6
+		baseExponents: 6,
+		swap: {
+			[ASSET_ID_USDRISE]: {
+				interfaceProviderAddr: 'sunrise1xxgjt7yqkmn63m2d0nrf0vt5uuc2hr6l45xaa9',
+				strategy: {
+					case: 'pool',
+					value: create(RoutePoolSchema, { poolId: BigInt(1) })
+				}
+			}
+		}
 	},
 	[ASSET_ID_VRISE]: {
 		tickerDisplay: 'vRISE',
@@ -41,11 +50,11 @@ export const sunriseAssetMetadata: AssetMetadata = {
 		base: ASSET_ID_USDRISE,
 		baseExponents: 6,
 		swap: {
-			[ASSET_ID_USDN]: {
+			[ASSET_ID_RISE]: {
 				interfaceProviderAddr: 'sunrise1xxgjt7yqkmn63m2d0nrf0vt5uuc2hr6l45xaa9',
 				strategy: {
 					case: 'pool',
-					value: create(RoutePoolSchema, { poolId: BigInt(3) })
+					value: create(RoutePoolSchema, { poolId: BigInt(1) })
 				}
 			},
 			[ASSET_ID_NOBLE_USDC]: {
@@ -53,6 +62,13 @@ export const sunriseAssetMetadata: AssetMetadata = {
 				strategy: {
 					case: 'pool',
 					value: create(RoutePoolSchema, { poolId: BigInt(2) })
+				}
+			},
+			[ASSET_ID_USDN]: {
+				interfaceProviderAddr: 'sunrise1xxgjt7yqkmn63m2d0nrf0vt5uuc2hr6l45xaa9',
+				strategy: {
+					case: 'pool',
+					value: create(RoutePoolSchema, { poolId: BigInt(3) })
 				}
 			},
 			[ASSET_ID_ATOM]: {
