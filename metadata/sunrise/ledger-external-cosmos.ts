@@ -1,6 +1,6 @@
 import type { LedgerMetadata } from '../../types/ledger';
 import { AddressType } from '../../types/wallet';
-import { ASSET_ID_NOBLE_USDC, ASSET_ID_ATOM, ASSET_ID_USDN, ASSET_ID_USDY, ASEET_ID_WBTC, ASSET_ID_WETH } from './asset';
+import { ASSET_ID_NOBLE_USDC, ASSET_ID_ATOM, ASSET_ID_USDN, ASSET_ID_USDY, ASEET_ID_WBTC, ASSET_ID_WETH, ASSET_ID_USDT } from './asset';
 
 export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 	cosmoshub: {
@@ -35,6 +35,15 @@ export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 				exponents: 18,
 				base: "ibc/C0B53D3D23827AE38058BED0BDCD554229278AF530A8D265FCF6DFF7C4B2ADFF",
 				baseExponents: 18
+			},
+			[ASSET_ID_USDT]: {
+				tickerDisplay: 'USDT',
+				tickerSystem: 'USDT',
+				image:
+					'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg',
+				exponents: 6,
+				base: "ibc/E7E51FFF94A8B55BE84CEB0345E5CAF0A5DAEB374C6806CE908098B8996C7782",
+				baseExponents: 6
 			}
 		},
 		addressType: AddressType.Cosmos,

@@ -11,6 +11,7 @@ export const ASSET_ID_NOBLE_USDC = "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7
 export const ASSET_ID_ATOM = "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9"
 export const ASEET_ID_WBTC = "ibc/0E293A7622DC9A6439DB60E6D234B5AF446962E27CA3AB44D0590603DFF6968E"
 export const ASSET_ID_WETH = "ibc/694A6B26A43A2FBECCFFEAC022DEACB39578E54207FDD32005CD976B57B98004"
+export const ASSET_ID_USDT = "ibc/D4FF12988C31AD8E3D2555621F95C7EB2B6FBAAD2F9487FB11A2A8BBB004B4B3"
 
 export const sunriseAssetMetadata: AssetMetadata = {
 	[ASSET_ID_RISE]: {
@@ -73,6 +74,13 @@ export const sunriseAssetMetadata: AssetMetadata = {
 				strategy: {
 					case: 'pool',
 					value: create(RoutePoolSchema, { poolId: BigInt(6) })
+				}
+			},
+			[ASSET_ID_WETH]: {
+				interfaceProviderAddr: 'sunrise1xxgjt7yqkmn63m2d0nrf0vt5uuc2hr6l45xaa9',
+				strategy: {
+					case: 'pool',
+					value: create(RoutePoolSchema, { poolId: BigInt(7) })
 				}
 			}
 		}
@@ -195,5 +203,31 @@ export const sunriseAssetMetadata: AssetMetadata = {
 		exponents: 18,
 		base: "ibc/C0B53D3D23827AE38058BED0BDCD554229278AF530A8D265FCF6DFF7C4B2ADFF",
 		baseExponents: 18,
+		bridge: {
+			id: 'ibc',
+			originLedgerId: 'cosmoshub'
+		},
+		swap: {
+			[ASSET_ID_USDRISE]: {
+				interfaceProviderAddr: 'sunrise1xxgjt7yqkmn63m2d0nrf0vt5uuc2hr6l45xaa9',
+				strategy: {
+					case: 'pool',
+					value: create(RoutePoolSchema, { poolId: BigInt(7) })
+				}
+			}
+		}
+	},
+	[ASSET_ID_USDT]: {
+		tickerDisplay: 'USDT',
+		tickerSystem: 'USDT',
+		image:
+			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdt.svg',
+		exponents: 6,
+		base: "ibc/E7E51FFF94A8B55BE84CEB0345E5CAF0A5DAEB374C6806CE908098B8996C7782",
+		baseExponents: 6,
+		bridge: {
+			id: 'ibc',
+			originLedgerId: 'cosmoshub'
+		}
 	}
 };
