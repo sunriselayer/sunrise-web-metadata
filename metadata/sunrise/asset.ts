@@ -193,6 +193,13 @@ export const sunriseAssetMetadata: AssetMetadata = {
 					case: 'pool',
 					value: create(RoutePoolSchema, { poolId: BigInt(4) })
 				}
+			},
+			[ASSET_ID_RISE]: {
+				interfaceProviderAddr: 'sunrise1xxgjt7yqkmn63m2d0nrf0vt5uuc2hr6l45xaa9',
+				strategy: {
+					case: 'pool',
+					value: create(RoutePoolSchema, { poolId: BigInt(9) })
+				}
 			}
 		}
 	},
@@ -215,6 +222,13 @@ export const sunriseAssetMetadata: AssetMetadata = {
 					case: 'pool',
 					value: create(RoutePoolSchema, { poolId: BigInt(6) })
 				}
+			},
+			[ASSET_ID_RISE]: {
+				interfaceProviderAddr: 'sunrise1xxgjt7yqkmn63m2d0nrf0vt5uuc2hr6l45xaa9',
+				strategy: {
+					case: 'pool',
+					value: create(RoutePoolSchema, { poolId: BigInt(10) })
+				}
 			}
 		}
 	},
@@ -236,6 +250,13 @@ export const sunriseAssetMetadata: AssetMetadata = {
 				strategy: {
 					case: 'pool',
 					value: create(RoutePoolSchema, { poolId: BigInt(7) })
+				}
+			},
+			[ASSET_ID_RISE]: {
+				interfaceProviderAddr: 'sunrise1xxgjt7yqkmn63m2d0nrf0vt5uuc2hr6l45xaa9',
+				strategy: {
+					case: 'pool',
+					value: create(RoutePoolSchema, { poolId: BigInt(11) })
 				}
 			}
 		}
