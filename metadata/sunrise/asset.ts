@@ -136,11 +136,18 @@ export const sunriseAssetMetadata: AssetMetadata = {
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
 		exponents: 6,
-		base: "uusdc",
+		base: 'uusdc',
 		baseExponents: 6,
 		bridge: {
 			id: 'ibc',
 			originLedgerId: 'noble'
+		},
+		forwarding: {
+			cosmoshub: {
+				intermediateLedgerId: 'noble',
+				channel: 'channel-4',
+				port: 'transfer'
+			}
 		},
 		swap: {
 			[ASSET_ID_USDRISE]: {
