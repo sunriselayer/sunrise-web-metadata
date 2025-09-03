@@ -23,6 +23,19 @@ export type AssetMetadata = {
 			originLedgerId: string;
 		};
 		swap?: SwapMetadata; // required only in Sunrise's AssetMetadata
+		forwarding?: ForwardingMetadata;
+	};
+};
+
+export type ForwardingMetadata = {
+	// The key is the destination ledgerId
+	[ledgerId: string]: {
+		// The ledgerId of the intermediate chain
+		intermediateLedgerId: string;
+		// The channel from the intermediate chain to the destination chain
+		channel: string;
+		// The port from the intermediate chain to the destination chain
+		port?: string; // defaults to 'transfer'
 	};
 };
 
@@ -30,8 +43,8 @@ export type SwapMetadata = {
 	[denomOut: string]: {
 		interfaceProviderAddr: string;
 		strategy:
-			| { value: RoutePool; case: 'pool' }
-			| { value: RouteSeries; case: 'series' }
-			| { value: RouteParallel; case: 'parallel' };
+		| { value: RoutePool; case: 'pool' }
+		| { value: RouteSeries; case: 'series' }
+		| { value: RouteParallel; case: 'parallel' };
 	};
 };

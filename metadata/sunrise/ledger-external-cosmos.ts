@@ -1,6 +1,14 @@
 import type { LedgerMetadata } from '../../types/ledger';
 import { AddressType } from '../../types/wallet';
-import { ASSET_ID_NOBLE_USDC, ASSET_ID_ATOM, ASSET_ID_USDN, ASSET_ID_USDY, ASEET_ID_WBTC, ASSET_ID_WETH, ASSET_ID_USDT } from './asset';
+import {
+	ASSET_ID_NOBLE_USDC,
+	ASSET_ID_ATOM,
+	ASSET_ID_USDN,
+	ASSET_ID_USDY,
+	ASEET_ID_WBTC,
+	ASSET_ID_WETH,
+	ASSET_ID_USDT,
+} from './asset';
 
 export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 	cosmoshub: {
@@ -44,6 +52,27 @@ export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 				exponents: 6,
 				base: "ibc/E7E51FFF94A8B55BE84CEB0345E5CAF0A5DAEB374C6806CE908098B8996C7782",
 				baseExponents: 6
+			},
+			[ASSET_ID_NOBLE_USDC]: {
+				tickerDisplay: 'USDC',
+				tickerSystem: 'USDC',
+				image:
+					'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg',
+				exponents: 6,
+				base: 'ibc/F663521BF1836B00F5F177680F74BFB9A8B5654A694D0D2BC249E03CF2509013',
+				baseExponents: 6,
+				forwarding: {
+					sunrise: {
+						intermediateLedgerId: 'noble',
+						channel: 'channel-536',
+						port: 'transfer'
+					},
+					osmosis: {
+						intermediateLedgerId: 'noble',
+						channel: 'channel-1',
+						port: 'transfer'
+					}
+				}
 			}
 		},
 		addressType: AddressType.Cosmos,
@@ -80,7 +109,7 @@ export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 				image:
 					'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg',
 				exponents: 6,
-				base: "uusdc",
+				base: 'uusdc',
 				baseExponents: 6
 			},
 			[ASSET_ID_USDN]: {
@@ -108,14 +137,37 @@ export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 		sunriseChannel: 'channel-0',
 		cosmosChannel: 'channel-168'
 	},
-	// osmosis: {
-	// 	name: 'Osmosis',
-	// 	image: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg',
-	// 	rpc: ['https://rpc.osmosis.zone/'],
-	// 	assets: {},
-	// 	addressType: AddressType.Cosmos,
-	// 	prefix: 'osmo'
-	// },
+	osmosis: {
+		name: 'Osmosis',
+		image: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg',
+		rpc: ['https://rpc.osmosis.zone/'],
+		assets: {
+			[ASSET_ID_NOBLE_USDC]: {
+				tickerDisplay: 'USDC',
+				tickerSystem: 'USDC',
+				image:
+					'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg',
+				exponents: 6,
+				base: 'ibc/498A0751C798A0D9A389AA3691123DADA57DAA4FE165D5C75894505B876BA6E4',
+				baseExponents: 6,
+				forwarding: {
+					sunrise: {
+						intermediateLedgerId: 'noble',
+						channel: 'channel-750',
+						port: 'transfer'
+					},
+					cosmoshub: {
+						intermediateLedgerId: 'noble',
+						channel: 'channel-4',
+						port: 'transfer'
+					}
+				}
+			}
+		},
+		addressType: AddressType.Cosmos,
+		prefix: 'osmo',
+		chainId: 'osmosis-1'
+	},
 	// kava: {
 	// 	name: 'Kava',
 	// 	image: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.svg',
