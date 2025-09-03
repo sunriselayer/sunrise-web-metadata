@@ -148,7 +148,7 @@ export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 				image:
 					'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg',
 				exponents: 6,
-				base: 'ibc/F663521BF1836B00F5F177680F74BFB9A8B5654A694D0D2BC249E03CF2509013',
+				base: 'ibc/498A0751C798A0D9A389AA3691123DADA57DAA4FE165D5C75894505B876BA6E4',
 				baseExponents: 6,
 				forwarding: {
 					sunrise: {
