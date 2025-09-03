@@ -147,6 +147,11 @@ export const sunriseAssetMetadata: AssetMetadata = {
 				intermediateLedgerId: 'noble',
 				channel: 'channel-4',
 				port: 'transfer'
+			},
+			osmosis: {
+				intermediateLedgerId: 'noble',
+				channel: 'channel-1',
+				port: 'transfer'
 			}
 		},
 		swap: {

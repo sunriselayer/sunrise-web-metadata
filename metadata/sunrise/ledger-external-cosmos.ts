@@ -66,6 +66,11 @@ export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 						intermediateLedgerId: 'noble',
 						channel: 'channel-536',
 						port: 'transfer'
+					},
+					osmosis: {
+						intermediateLedgerId: 'noble',
+						channel: 'channel-1',
+						port: 'transfer'
 					}
 				}
 			}
@@ -132,14 +137,37 @@ export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 		sunriseChannel: 'channel-0',
 		cosmosChannel: 'channel-168'
 	},
-	// osmosis: {
-	// 	name: 'Osmosis',
-	// 	image: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg',
-	// 	rpc: ['https://rpc.osmosis.zone/'],
-	// 	assets: {},
-	// 	addressType: AddressType.Cosmos,
-	// 	prefix: 'osmo'
-	// },
+	osmosis: {
+		name: 'Osmosis',
+		image: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg',
+		rpc: ['https://rpc.osmosis.zone/'],
+		assets: {
+			[ASSET_ID_NOBLE_USDC]: {
+				tickerDisplay: 'USDC',
+				tickerSystem: 'USDC',
+				image:
+					'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDCoin.svg',
+				exponents: 6,
+				base: 'ibc/F663521BF1836B00F5F177680F74BFB9A8B5654A694D0D2BC249E03CF2509013',
+				baseExponents: 6,
+				forwarding: {
+					sunrise: {
+						intermediateLedgerId: 'noble',
+						channel: 'channel-750',
+						port: 'transfer'
+					},
+					cosmoshub: {
+						intermediateLedgerId: 'noble',
+						channel: 'channel-4',
+						port: 'transfer'
+					}
+				}
+			}
+		},
+		addressType: AddressType.Cosmos,
+		prefix: 'osmo',
+		chainId: 'osmosis-1'
+	},
 	// kava: {
 	// 	name: 'Kava',
 	// 	image: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/kava/images/kava.svg',
