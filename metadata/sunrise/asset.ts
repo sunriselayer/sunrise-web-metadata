@@ -12,6 +12,7 @@ export const ASSET_ID_ATOM = "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598
 export const ASEET_ID_WBTC = "ibc/0E293A7622DC9A6439DB60E6D234B5AF446962E27CA3AB44D0590603DFF6968E"
 export const ASSET_ID_WETH = "ibc/694A6B26A43A2FBECCFFEAC022DEACB39578E54207FDD32005CD976B57B98004"
 export const ASSET_ID_USDT = "ibc/D4FF12988C31AD8E3D2555621F95C7EB2B6FBAAD2F9487FB11A2A8BBB004B4B3"
+export const ASSET_ID_OSMO = "ibc/47BD209179859CDE4A2806763D7189B6E6FE13A17880FE2B42DE1E6C1E329E23"
 
 export const sunriseAssetMetadata: AssetMetadata = {
 	[ASSET_ID_RISE]: {
@@ -294,5 +295,18 @@ export const sunriseAssetMetadata: AssetMetadata = {
 				}
 			}
 		}
+	},
+	[ASSET_ID_OSMO]: {
+		tickerDisplay: 'OSMO',
+		tickerSystem: 'OSMO',
+		image:
+			'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg',
+		exponents: 6,
+		base: "uosmo",
+		baseExponents: 6,
+		bridge: {
+			id: 'ibc',
+			originLedgerId: 'osmosis'
+		},
 	}
 };

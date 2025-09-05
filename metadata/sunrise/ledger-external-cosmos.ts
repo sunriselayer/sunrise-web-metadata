@@ -8,6 +8,7 @@ import {
 	ASEET_ID_WBTC,
 	ASSET_ID_WETH,
 	ASSET_ID_USDT,
+	ASSET_ID_OSMO,
 } from './asset';
 
 export const sunriseExternalCosmosMetadata: LedgerMetadata = {
@@ -142,6 +143,15 @@ export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 		image: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg',
 		rpc: ['https://rpc.osmosis.zone/'],
 		assets: {
+			[ASSET_ID_OSMO]: {
+				tickerDisplay: 'OSMO',
+				tickerSystem: 'OSMO',
+				image:
+					'https://raw.githubusercontent.com/cosmos/chain-registry/master/osmosis/images/osmo.svg',
+				exponents: 6,
+				base: 'uosmo',
+				baseExponents: 6
+			},
 			[ASSET_ID_NOBLE_USDC]: {
 				tickerDisplay: 'USDC',
 				tickerSystem: 'USDC',
@@ -166,7 +176,9 @@ export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 		},
 		addressType: AddressType.Cosmos,
 		prefix: 'osmo',
-		chainId: 'osmosis-1'
+		chainId: 'osmosis-1',
+		sunriseChannel: 'channel-3',
+		cosmosChannel: 'channel-106275'
 	},
 	// kava: {
 	// 	name: 'Kava',
