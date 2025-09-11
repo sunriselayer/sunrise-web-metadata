@@ -9,6 +9,8 @@ import {
 	ASSET_ID_WETH,
 	ASSET_ID_USDT,
 	ASSET_ID_OSMO,
+	ASSET_ID_RISE,
+	ASSET_ID_USDRISE,
 } from './asset';
 
 export const sunriseExternalCosmosMetadata: LedgerMetadata = {
@@ -74,6 +76,24 @@ export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 						port: 'transfer'
 					}
 				}
+			},
+			[ASSET_ID_RISE]: {
+				tickerDisplay: 'RISE',
+				tickerSystem: 'RISE',
+				image:
+					'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/RISE.svg',
+				exponents: 6,
+				base: 'ibc/261460D72BA2141BC77D439038343CB2B37C87B4148B4D5E30A5168A93E3E1D9',
+				baseExponents: 6
+			},
+			[ASSET_ID_USDRISE]: {
+				tickerDisplay: 'USDrise',
+				tickerSystem: 'USDrise',
+				image:
+					'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDrise.svg',
+				exponents: 6,
+				base: 'ibc/551CA67335E14C0F0D8B2AA24DF575F0E02836540330B20778C826F48ED8DE80',
+				baseExponents: 6
 			}
 		},
 		addressType: AddressType.Cosmos,
@@ -130,6 +150,24 @@ export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 				exponents: 18,
 				base: "ausdy",
 				baseExponents: 18
+			},
+			[ASSET_ID_RISE]: {
+				tickerDisplay: 'RISE',
+				tickerSystem: 'RISE',
+				image:
+					'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/RISE.svg',
+				exponents: 6,
+				base: 'ibc/3895588D9C6B47E5B838E5ED3A64F7F728A1C41F0D97EE9E2F4817E46B445B38',
+				baseExponents: 6
+			},
+			[ASSET_ID_USDRISE]: {
+				tickerDisplay: 'USDrise',
+				tickerSystem: 'USDrise',
+				image:
+					'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDrise.svg',
+				exponents: 6,
+				base: 'ibc/66382B8DABAC0CBDC669E8D3551F26D123BB28CE0C73D3705A571F58E23DCE81',
+				baseExponents: 6
 			}
 		},
 		addressType: AddressType.Cosmos,
@@ -172,6 +210,24 @@ export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 						port: 'transfer'
 					}
 				}
+			},
+			[ASSET_ID_RISE]: {
+				tickerDisplay: 'RISE',
+				tickerSystem: 'RISE',
+				image:
+					'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/RISE.svg',
+				exponents: 6,
+				base: 'ibc/5DD535CC5244A556F78ACAFD1067D93C0FB335E69600343840D66E76CE46B30B',
+				baseExponents: 6
+			},
+			[ASSET_ID_USDRISE]: {
+				tickerDisplay: 'USDrise',
+				tickerSystem: 'USDrise',
+				image:
+					'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDrise.svg',
+				exponents: 6,
+				base: 'ibc/2B46DD47EBAA57FB76436A1E5758BDE6356A8CE04D9FE879F95F838FAAD231B6',
+				baseExponents: 6
 			}
 		},
 		addressType: AddressType.Cosmos,
