@@ -5,11 +5,12 @@ import { create } from '@bufbuild/protobuf';
 export const ASSET_ID_RISE = 'urise';
 export const ASSET_ID_VRISE = 'uvrise';
 export const ASSET_ID_USDRISE = 'uusdrise';
+export const ASSET_ID_STRISE = "factory/sunrise1ghd753shjuwexxywmgs4xz7x2q732vcnkm6h2pyv9s6ah3hylvrqz5nv4h/strise"
 export const ASSET_ID_USDN = 'ibc/A7AD825A4B48DDA0138D118655E60100D22A4D690C45B95221520B58C9A64B63';
 export const ASSET_ID_USDY = 'ibc/AAF322A78A0E34B76CDA05BA9AE96DC1521F9E103EC576AB9931116B2AB8C26B';
 export const ASSET_ID_NOBLE_USDC = "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5"
 export const ASSET_ID_ATOM = "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9"
-export const ASEET_ID_WBTC = "ibc/0E293A7622DC9A6439DB60E6D234B5AF446962E27CA3AB44D0590603DFF6968E"
+export const ASSET_ID_WBTC = "ibc/0E293A7622DC9A6439DB60E6D234B5AF446962E27CA3AB44D0590603DFF6968E"
 export const ASSET_ID_WETH = "ibc/694A6B26A43A2FBECCFFEAC022DEACB39578E54207FDD32005CD976B57B98004"
 export const ASSET_ID_USDT = "ibc/D4FF12988C31AD8E3D2555621F95C7EB2B6FBAAD2F9487FB11A2A8BBB004B4B3"
 export const ASSET_ID_OSMO = "ibc/47BD209179859CDE4A2806763D7189B6E6FE13A17880FE2B42DE1E6C1E329E23"
@@ -30,6 +31,34 @@ export const sunriseAssetMetadata: AssetMetadata = {
 					case: 'pool',
 					value: create(RoutePoolSchema, { poolId: BigInt(1) })
 				}
+			},
+			[ASSET_ID_STRISE]: {
+				interfaceProviderAddr: 'sunrise1xxgjt7yqkmn63m2d0nrf0vt5uuc2hr6l45xaa9',
+				strategy: {
+					case: 'pool',
+					value: create(RoutePoolSchema, { poolId: BigInt(12) })
+				}
+			},
+			[ASSET_ID_ATOM]: {
+				interfaceProviderAddr: 'sunrise1xxgjt7yqkmn63m2d0nrf0vt5uuc2hr6l45xaa9',
+				strategy: {
+					case: 'pool',
+					value: create(RoutePoolSchema, { poolId: BigInt(9) })
+				}
+			},
+			[ASSET_ID_WBTC]: {
+				interfaceProviderAddr: 'sunrise1xxgjt7yqkmn63m2d0nrf0vt5uuc2hr6l45xaa9',
+				strategy: {
+					case: 'pool',
+					value: create(RoutePoolSchema, { poolId: BigInt(10) })
+				}
+			},
+			[ASSET_ID_WETH]: {
+				interfaceProviderAddr: 'sunrise1xxgjt7yqkmn63m2d0nrf0vt5uuc2hr6l45xaa9',
+				strategy: {
+					case: 'pool',
+					value: create(RoutePoolSchema, { poolId: BigInt(11) })
+				}
 			}
 		}
 	},
@@ -41,6 +70,24 @@ export const sunriseAssetMetadata: AssetMetadata = {
 		exponents: 6,
 		base: ASSET_ID_VRISE,
 		baseExponents: 6
+	},
+	[ASSET_ID_STRISE]: {
+		tickerDisplay: 'stRISE',
+		tickerSystem: 'stRISE',
+		image:
+			'https://haruflyer.risesunrise.io/strise.svg',
+		exponents: 6,
+		base: ASSET_ID_STRISE,
+		baseExponents: 6,
+		swap: {
+			[ASSET_ID_RISE]: {
+				interfaceProviderAddr: 'sunrise1xxgjt7yqkmn63m2d0nrf0vt5uuc2hr6l45xaa9',
+				strategy: {
+					case: 'pool',
+					value: create(RoutePoolSchema, { poolId: BigInt(12) })
+				}
+			}
+		}
 	},
 	[ASSET_ID_USDRISE]: {
 		tickerDisplay: 'USDrise',
@@ -86,7 +133,7 @@ export const sunriseAssetMetadata: AssetMetadata = {
 					value: create(RoutePoolSchema, { poolId: BigInt(5) })
 				}
 			},
-			[ASEET_ID_WBTC]: {
+			[ASSET_ID_WBTC]: {
 				interfaceProviderAddr: 'sunrise1xxgjt7yqkmn63m2d0nrf0vt5uuc2hr6l45xaa9',
 				strategy: {
 					case: 'pool',
@@ -216,7 +263,7 @@ export const sunriseAssetMetadata: AssetMetadata = {
 			}
 		}
 	},
-	[ASEET_ID_WBTC]: {
+	[ASSET_ID_WBTC]: {
 		tickerDisplay: 'WBTC',
 		tickerSystem: 'WBTC',
 		image:

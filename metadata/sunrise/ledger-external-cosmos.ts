@@ -5,7 +5,7 @@ import {
 	ASSET_ID_ATOM,
 	ASSET_ID_USDN,
 	ASSET_ID_USDY,
-	ASEET_ID_WBTC,
+	ASSET_ID_WBTC,
 	ASSET_ID_WETH,
 	ASSET_ID_USDT,
 	ASSET_ID_OSMO,
@@ -29,7 +29,7 @@ export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 				base: "uatom",
 				baseExponents: 6
 			},
-			[ASEET_ID_WBTC]: {
+			[ASSET_ID_WBTC]: {
 				tickerDisplay: 'WBTC',
 				tickerSystem: 'WBTC',
 				image:
