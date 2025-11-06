@@ -88,7 +88,7 @@ export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 			},
 			[ASSET_ID_USDRISE]: {
 				tickerDisplay: 'USDrise',
-				tickerSystem: 'USDrise',
+				tickerSystem: 'USDRISE',
 				image:
 					'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/usdrise.svg',
 				exponents: 6,
@@ -162,7 +162,7 @@ export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 			},
 			[ASSET_ID_USDRISE]: {
 				tickerDisplay: 'USDrise',
-				tickerSystem: 'USDrise',
+				tickerSystem: 'USDRISE',
 				image:
 					'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/usdrise.svg',
 				exponents: 6,
@@ -222,7 +222,7 @@ export const sunriseExternalCosmosMetadata: LedgerMetadata = {
 			},
 			[ASSET_ID_USDRISE]: {
 				tickerDisplay: 'USDrise',
-				tickerSystem: 'USDrise',
+				tickerSystem: 'USDRISE',
 				image:
 					'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/usdrise.svg',
 				exponents: 6,
