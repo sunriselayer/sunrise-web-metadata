@@ -13,7 +13,7 @@ export const ASSET_ID_NOBLE_USDC = "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7
 export const sunriseTestAssetMetadata: AssetMetadata = {
 	[ASSET_ID_RISE]: {
 		tickerDisplay: 'RISE',
-		tickerSystem: 'RISE',
+		tickerSystem: 'SUNRISE',
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/sunrise.svg',
 		exponents: 6,

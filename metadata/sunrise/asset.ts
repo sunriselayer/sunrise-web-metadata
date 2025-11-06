@@ -18,7 +18,7 @@ export const ASSET_ID_OSMO = "ibc/47BD209179859CDE4A2806763D7189B6E6FE13A17880FE
 export const sunriseAssetMetadata: AssetMetadata = {
 	[ASSET_ID_RISE]: {
 		tickerDisplay: 'RISE',
-		tickerSystem: 'RISE',
+		tickerSystem: 'SUNRISE',
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/sunrise.svg',
 		exponents: 6,
@@ -64,7 +64,7 @@ export const sunriseAssetMetadata: AssetMetadata = {
 	},
 	[ASSET_ID_VRISE]: {
 		tickerDisplay: 'vRISE',
-		tickerSystem: 'vRISE',
+		tickerSystem: 'SUNRISE',
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/vrise.svg',
 		exponents: 6,
@@ -73,7 +73,7 @@ export const sunriseAssetMetadata: AssetMetadata = {
 	},
 	[ASSET_ID_STRISE]: {
 		tickerDisplay: 'stRISE',
-		tickerSystem: 'stRISE',
+		tickerSystem: 'SUNRISE',
 		image:
 			'https://haruflyer.risesunrise.io/strise.svg',
 		exponents: 6,

@@ -20,7 +20,7 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 			},
 			// [ASSET_ID_RISE]: {
 			// 	tickerDisplay: 'RISE',
-			// 	tickerSystem: 'RISE',
+			// 	tickerSystem: 'SUNRISE',
 			// 	base: 'ibc/7C93F76A3800F40EB344E4B7130FEF99D51C5C0489C393112206A8065D5CFCBC',
 			// 	image:
 			// 		'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/sunrise.svg',
@@ -59,7 +59,7 @@ export const sunriseTestExternalCosmosMetadata: LedgerMetadata = {
 			},
 			// [ASSET_ID_RISE]: {
 			// 	tickerDisplay: 'RISE',
-			// 	tickerSystem: 'RISE',
+			// 	tickerSystem: 'SUNRISE',
 			// 	base: 'ibc/7C93F76A3800F40EB344E4B7130FEF99D51C5C0489C393112206A8065D5CFCBC',
 			// 	image:
 			// 		'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/sunrise.svg',
