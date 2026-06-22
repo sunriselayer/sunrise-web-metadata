@@ -93,7 +93,7 @@ export const sunriseAssetMetadata: AssetMetadata = {
 		tickerDisplay: 'USDrise',
 		tickerSystem: 'USDRISE',
 		image:
-			'https://raw.githubusercontent.com/sunriselayer/chain-registry/master/sunrise/images/usdrise.svg',
+			'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/usdrise.svg',
 		exponents: 6,
 		base: ASSET_ID_USDRISE,
 		baseExponents: 6,
