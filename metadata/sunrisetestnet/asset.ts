@@ -5,10 +5,10 @@ import type { AssetMetadata } from '../../types/asset';
 export const ASSET_ID_RISE = 'urise';
 export const ASSET_ID_VRISE = 'uvrise';
 export const ASSET_ID_USDRISE = 'uusdrise';
-export const ASSET_ID_USDN = 'ibc/A7AD825A4B48DDA0138D118655E60100D22A4D690C45B95221520B58C9A64B63'; // TODO: change to ibc/xxxxxxxxx;	
-export const ASSET_ID_ATOM =
-	'ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9';
-export const ASSET_ID_NOBLE_USDC = "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5";
+export const ASSET_ID_USDN = 'ibc/A7AD825A4B48DDA0138D118655E60100D22A4D690C45B95221520B58C9A64B63'; // TODO: change to ibc/xxxxxxxxx;
+export const ASSET_ID_ATOM = 'ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9';
+export const ASSET_ID_NOBLE_USDC =
+	'ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5';
 
 export const sunriseTestAssetMetadata: AssetMetadata = {
 	[ASSET_ID_RISE]: {
@@ -33,7 +33,7 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		tickerDisplay: 'USDrise',
 		tickerSystem: 'USDRISE',
 		image:
-			'https://raw.githubusercontent.com/sunriselayer/chain-registry/master/sunrise/images/usdrise.svg',
+			'https://raw.githubusercontent.com/cosmos/chain-registry/master/sunrise/images/usdrise.svg',
 		exponents: 6,
 		base: ASSET_ID_USDRISE,
 		baseExponents: 6,
@@ -57,10 +57,9 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 	[ASSET_ID_USDN]: {
 		tickerDisplay: 'USDN',
 		tickerSystem: 'USDN',
-		image:
-			'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDN.svg',
+		image: 'https://raw.githubusercontent.com/cosmos/chain-registry/master/noble/images/USDN.svg',
 		exponents: 6,
-		base: "uusdn",
+		base: 'uusdn',
 		baseExponents: 6,
 		bridge: {
 			id: 'ibc',
@@ -82,7 +81,7 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/ethereum/images/usdc.svg',
 		exponents: 6,
-		base: "uusdc",
+		base: 'uusdc',
 		baseExponents: 6,
 		bridge: {
 			id: 'ibc',
@@ -104,7 +103,7 @@ export const sunriseTestAssetMetadata: AssetMetadata = {
 		image:
 			'https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.svg',
 		exponents: 6,
-		base: "uatom",
+		base: 'uatom',
 		baseExponents: 6,
 		bridge: {
 			id: 'ibc',
