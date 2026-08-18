@@ -5,14 +5,14 @@ export const sunriseTestExternalBitcoinMetadata: LedgerMetadata = {
 	bitcoin: {
 		name: 'Bitcoin',
 		image:
-			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/bitcoin/images/btc.png',
+			'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/bitcoin/images/btc.svg',
 		rpc: [],
 		assets: {
 			btc: {
 				tickerDisplay: 'BTC',
 				tickerSystem: 'BTC',
 				image:
-					'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/bitcoin/images/btc.png',
+					'https://raw.githubusercontent.com/cosmos/chain-registry/master/_non-cosmos/bitcoin/images/btc.svg',
 				exponents: 8
 			}
 		},
